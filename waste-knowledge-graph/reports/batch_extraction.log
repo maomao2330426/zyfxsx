@@ -1,0 +1,2 @@
+2026-09-14 21:21:37.852046: E tensorflow/core/util/util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+候选三元组 278 条，写入 data\candidates.jsonl

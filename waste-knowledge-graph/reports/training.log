@@ -1,0 +1,697 @@
+2026-09-14 21:11:55.275131: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-14 21:11:58.562528: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-14 21:12:00.139702: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-14 21:12:00.539753: E tensorflow/core/util/util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+{"epoch": 1, "ner_loss": 9.002885200521526, "relation_loss": 0.2369252642905956, "val_ner_f1": 0.8175481754817548, "val_relation_macro_f1": 1.0}
+{"epoch": 2, "ner_loss": 0.32129282876849174, "relation_loss": 0.00014324845040605664, "val_ner_f1": 0.9073327961321516, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 3, "ner_loss": 0.08604687452316284, "relation_loss": 6.808127396010711e-05, "val_ner_f1": 0.9090177133655394, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 4, "ner_loss": 0.038615887272445595, "relation_loss": 5.0935303480561264e-05, "val_ner_f1": 0.905356423681031, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 5, "ner_loss": 0.021921961321769393, "relation_loss": 3.8988583101480105e-05, "val_ner_f1": 0.9077728554168345, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 6, "ner_loss": 0.015075597419020008, "relation_loss": 3.245885387942133e-05, "val_ner_f1": 0.9056451612903227, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 7, "ner_loss": 0.010971569784862153, "relation_loss": 2.8383408869772477e-05, "val_ner_f1": 0.9043197416229309, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 8, "ner_loss": 0.007771754411377889, "relation_loss": 2.2933763268477324e-05, "val_ner_f1": 0.9043197416229309, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 9, "ner_loss": 0.006064352048697937, "relation_loss": 1.932269036414629e-05, "val_ner_f1": 0.9052037111738604, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 10, "ner_loss": 0.005220150872928035, "relation_loss": 1.6758561434257633e-05, "val_ner_f1": 0.9052037111738604, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 11, "ner_loss": 0.004562364987042897, "relation_loss": 1.5566227442404316e-05, "val_ner_f1": 0.9043197416229309, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 12, "ner_loss": 0.0035860674928271156, "relation_loss": 1.31179326605407e-05, "val_ner_f1": 0.9017387788111606, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 13, "ner_loss": 0.0032709679525235996, "relation_loss": 1.1626950662075079e-05, "val_ner_f1": 0.9029911075181891, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 14, "ner_loss": 0.0025192467660150107, "relation_loss": 1.0934730238766539e-05, "val_ner_f1": 0.9025475131419329, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 15, "ner_loss": 0.0022055651352275163, "relation_loss": 9.589856691651649e-06, "val_ner_f1": 0.9038772213247173, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 16, "ner_loss": 0.002048538369469016, "relation_loss": 8.579601037982844e-06, "val_ner_f1": 0.9008498583569405, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 17, "ner_loss": 0.0016971675504464656, "relation_loss": 7.338099317835526e-06, "val_ner_f1": 0.9004048582995953, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 18, "ner_loss": 0.0017108921704622096, "relation_loss": 6.801491692573002e-06, "val_ner_f1": 0.9021827000808407, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 19, "ner_loss": 0.0013701921125175431, "relation_loss": 6.506725910907442e-06, "val_ner_f1": 0.9004854368932039, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 20, "ner_loss": 0.0012971322807168368, "relation_loss": 6.015938528408322e-06, "val_ner_f1": 0.8995951417004048, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 21, "ner_loss": 0.001120564981486977, "relation_loss": 5.6945324164350015e-06, "val_ner_f1": 0.8995951417004048, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 22, "ner_loss": 0.0010616136552177042, "relation_loss": 5.066588939558535e-06, "val_ner_f1": 0.9031476997578692, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 23, "ner_loss": 0.0009444922419360784, "relation_loss": 4.795563808436461e-06, "val_ner_f1": 0.899149453219927, "val_relation_macro_f1": 0.9985759605419998}
+{"epoch": 24, "ner_loss": 0.0008771643367842497, "relation_loss": 4.27790328839204e-06, "val_ner_f1": 0.9027048849414615, "val_relation_macro_f1": 0.9985759605419998}
+{
+  "ner": {
+    "precision": 1.0,
+    "recall": 0.9837662337662337,
+    "f1": 0.9918166939443536,
+    "true_positive": 1515,
+    "predicted": 1515,
+    "gold": 1540
+  },
+  "relation": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "NO_RELATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "BELONGS_TO": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "DISPOSE_WITH": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        220,
+        0,
+        0
+      ],
+      [
+        0,
+        352,
+        0
+      ],
+      [
+        0,
+        0,
+        198
+      ]
+    ],
+    "label_order": [
+      "NO_RELATION",
+      "BELONGS_TO",
+      "DISPOSE_WITH"
+    ],
+    "evaluation": "gold entity spans; not end-to-end triple score"
+  },
+  "errors": [
+    {
+      "text": "整理家务时，练习本的垃圾类型为可回收物，需分类投放。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          15,
+          19,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          15,
+          19,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "假如练习本属于可回收物，该如何处理？",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "干垃圾包括胶带。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          7,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "处理家庭废弃物时，宣传单的垃圾类型为可回收物，需分类投放。这里讨论的是生活废弃物。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "请大家注意：丢弃的练习本可按可回收物处置。物品的状态也需要核对。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "处理家庭废弃物时，将练习本说成湿垃圾是错误的说法。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          15,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          15,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "根据分类说明，一般而言，干垃圾这一类别包含胶带。大家应当认真分类。",
+      "gold_entities": [
+        [
+          12,
+          15,
+          "CATEGORY"
+        ],
+        [
+          21,
+          23,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          12,
+          15,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "投放练习本时，需要保持清洁干燥。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "处理家庭废弃物时，宣传单这种东西算作可回收物，请分类收集。大家应当认真分类。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "投放宣传单时，需要保持清洁干燥。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "投放胶带时，需要装袋后投入干垃圾容器。",
+      "gold_entities": [
+        [
+          2,
+          4,
+          "ITEM"
+        ],
+        [
+          8,
+          18,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          8,
+          18,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "假如胶带属于干垃圾，该如何处理？",
+      "gold_entities": [
+        [
+          2,
+          4,
+          "ITEM"
+        ],
+        [
+          6,
+          9,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          6,
+          9,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "日常生活中，如果练习本被当成可回收物，还需要进一步确认。物品的状态也需要核对。",
+      "gold_entities": [
+        [
+          8,
+          11,
+          "ITEM"
+        ],
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "在这个例子里，有关练习本的处理，请记住要保持清洁干燥。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          20,
+          26,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          20,
+          26,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "可回收物包括宣传单。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "在这个例子里，一般而言，可回收物这一类别包含练习本。这里讨论的是生活废弃物。",
+      "gold_entities": [
+        [
+          12,
+          16,
+          "CATEGORY"
+        ],
+        [
+          22,
+          25,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          12,
+          16,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "可回收物包括练习本。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "日常生活中的练习本，其类别是可回收物。",
+      "gold_entities": [
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "处理家庭废弃物时，有人问练习本能否归到可回收物，这里没有给出答案。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          12,
+          15,
+          "ITEM"
+        ],
+        [
+          19,
+          23,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          19,
+          23,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "请将练习本按可回收物进行分类。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          6,
+          10,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          6,
+          10,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "假如宣传单属于可回收物，该如何处理？",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "处理家庭废弃物时，如果宣传单被当成可回收物，还需要进一步确认。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          11,
+          14,
+          "ITEM"
+        ],
+        [
+          17,
+          21,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          17,
+          21,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "处理家庭废弃物时，有关宣传单的处理，请记住要保持清洁干燥。",
+      "gold_entities": [
+        [
+          11,
+          14,
+          "ITEM"
+        ],
+        [
+          22,
+          28,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          22,
+          28,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "根据分类说明，根据物品的情况，练习本可以划为可回收物。大家应当认真分类。",
+      "gold_entities": [
+        [
+          15,
+          18,
+          "ITEM"
+        ],
+        [
+          22,
+          26,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          22,
+          26,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "日常生活中，一般而言，可回收物这一类别包含宣传单。这里讨论的是生活废弃物。",
+      "gold_entities": [
+        [
+          11,
+          15,
+          "CATEGORY"
+        ],
+        [
+          21,
+          24,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          11,
+          15,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    }
+  ],
+  "best_epoch": 3,
+  "epochs": 24,
+  "seed": 42,
+  "seconds": 347.40149929999825,
+  "tensorflow": "2.20.0",
+  "python": "3.12.14",
+  "dataset": {
+    "train": 3255,
+    "val": 665,
+    "test": 770
+  },
+  "limitation": "模板生成语料，按物品隔离；只验证教学流程，不代表自然网页泛化性能。"
+}

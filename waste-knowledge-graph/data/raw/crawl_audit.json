@@ -1,0 +1,23 @@
+{
+  "reason": "finished",
+  "pages": [
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82%E7%94%9F%E6%B4%BB%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB%E5%88%B6%E5%BA%A6",
+      "status": 200,
+      "sha256": "5fdfc524c89e28e5ca1d51c98fc1be58d0949c797e37999a295730be24d4b65f",
+      "title": "上海市生活垃圾分类制度 - 维基百科，自由的百科全书"
+    },
+    {
+      "url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "status": 200,
+      "sha256": "72dfa246d762a2bb465fd97bb341472c88bb4d97a0f5135444b94a6dd346aebb",
+      "title": "关于印发《上海市生活垃圾分类投放指引（2024版）》的通知"
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E5%9E%83%E5%9C%BE%E5%88%86%E9%A1%9E",
+      "status": 200,
+      "sha256": "ac5e631465776415ec5a9e96daeb4e2fb0ba700219a3260726f17a2687c3ba6e",
+      "title": "垃圾分類 - 维基百科，自由的百科全书"
+    }
+  ]
+}

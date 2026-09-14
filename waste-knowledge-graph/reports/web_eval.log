@@ -1,0 +1,1241 @@
+2026-09-14 21:23:24.393594: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-14 21:23:26.086745: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-14 21:23:26.588637: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-14 21:23:26.734307: E tensorflow/core/util/util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+{
+  "ner": {
+    "precision": 0.35294117647058826,
+    "recall": 0.25,
+    "f1": 0.2926829268292683,
+    "true_positive": 6,
+    "predicted": 17,
+    "gold": 24
+  },
+  "relation": {
+    "accuracy": 0.7777777777777778,
+    "macro_f1": 0.2916666666666667,
+    "per_class": {
+      "NO_RELATION": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "BELONGS_TO": {
+        "precision": 1.0,
+        "recall": 0.7777777777777778,
+        "f1": 0.8750000000000001
+      },
+      "DISPOSE_WITH": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "label_order": [
+      "NO_RELATION",
+      "BELONGS_TO",
+      "DISPOSE_WITH"
+    ],
+    "evaluation": "gold entity spans; not end-to-end triple score"
+  },
+  "errors": [
+    {
+      "text": "可回收物：指废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          19,
+          "ITEM"
+        ],
+        [
+          20,
+          23,
+          "ITEM"
+        ],
+        [
+          24,
+          27,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          22,
+          "ITEM"
+        ],
+        [
+          25,
+          31,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "可回收物：指废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          19,
+          "ITEM"
+        ],
+        [
+          20,
+          23,
+          "ITEM"
+        ],
+        [
+          24,
+          27,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          22,
+          "ITEM"
+        ],
+        [
+          25,
+          31,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "可回收物：指废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          19,
+          "ITEM"
+        ],
+        [
+          20,
+          23,
+          "ITEM"
+        ],
+        [
+          24,
+          27,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          22,
+          "ITEM"
+        ],
+        [
+          25,
+          31,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "可回收物：指废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          19,
+          "ITEM"
+        ],
+        [
+          20,
+          23,
+          "ITEM"
+        ],
+        [
+          24,
+          27,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          22,
+          "ITEM"
+        ],
+        [
+          25,
+          31,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "可回收物：指废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          19,
+          "ITEM"
+        ],
+        [
+          20,
+          23,
+          "ITEM"
+        ],
+        [
+          24,
+          27,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          22,
+          "ITEM"
+        ],
+        [
+          25,
+          31,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "有害垃圾：指废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          17,
+          "ITEM"
+        ],
+        [
+          18,
+          21,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          26,
+          "ITEM"
+        ],
+        [
+          28,
+          47,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "有害垃圾：指废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          17,
+          "ITEM"
+        ],
+        [
+          18,
+          21,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          26,
+          "ITEM"
+        ],
+        [
+          28,
+          47,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "有害垃圾：指废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          17,
+          "ITEM"
+        ],
+        [
+          18,
+          21,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          26,
+          "ITEM"
+        ],
+        [
+          28,
+          47,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "有害垃圾：指废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          14,
+          17,
+          "ITEM"
+        ],
+        [
+          18,
+          21,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          26,
+          "ITEM"
+        ],
+        [
+          28,
+          47,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          11,
+          15,
+          "ITEM"
+        ],
+        [
+          16,
+          20,
+          "ITEM"
+        ],
+        [
+          21,
+          25,
+          "ITEM"
+        ],
+        [
+          26,
+          30,
+          "ITEM"
+        ],
+        [
+          31,
+          35,
+          "ITEM"
+        ],
+        [
+          36,
+          40,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          9,
+          "CATEGORY"
+        ],
+        [
+          10,
+          28,
+          "ITEM"
+        ],
+        [
+          30,
+          43,
+          "ITEM"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          11,
+          15,
+          "ITEM"
+        ],
+        [
+          16,
+          20,
+          "ITEM"
+        ],
+        [
+          21,
+          25,
+          "ITEM"
+        ],
+        [
+          26,
+          30,
+          "ITEM"
+        ],
+        [
+          31,
+          35,
+          "ITEM"
+        ],
+        [
+          36,
+          40,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          9,
+          "CATEGORY"
+        ],
+        [
+          10,
+          28,
+          "ITEM"
+        ],
+        [
+          30,
+          43,
+          "ITEM"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          11,
+          15,
+          "ITEM"
+        ],
+        [
+          16,
+          20,
+          "ITEM"
+        ],
+        [
+          21,
+          25,
+          "ITEM"
+        ],
+        [
+          26,
+          30,
+          "ITEM"
+        ],
+        [
+          31,
+          35,
+          "ITEM"
+        ],
+        [
+          36,
+          40,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          9,
+          "CATEGORY"
+        ],
+        [
+          10,
+          28,
+          "ITEM"
+        ],
+        [
+          30,
+          43,
+          "ITEM"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          11,
+          15,
+          "ITEM"
+        ],
+        [
+          16,
+          20,
+          "ITEM"
+        ],
+        [
+          21,
+          25,
+          "ITEM"
+        ],
+        [
+          26,
+          30,
+          "ITEM"
+        ],
+        [
+          31,
+          35,
+          "ITEM"
+        ],
+        [
+          36,
+          40,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          9,
+          "CATEGORY"
+        ],
+        [
+          10,
+          28,
+          "ITEM"
+        ],
+        [
+          30,
+          43,
+          "ITEM"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          11,
+          15,
+          "ITEM"
+        ],
+        [
+          16,
+          20,
+          "ITEM"
+        ],
+        [
+          21,
+          25,
+          "ITEM"
+        ],
+        [
+          26,
+          30,
+          "ITEM"
+        ],
+        [
+          31,
+          35,
+          "ITEM"
+        ],
+        [
+          36,
+          40,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          9,
+          "CATEGORY"
+        ],
+        [
+          10,
+          28,
+          "ITEM"
+        ],
+        [
+          30,
+          43,
+          "ITEM"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          11,
+          15,
+          "ITEM"
+        ],
+        [
+          16,
+          20,
+          "ITEM"
+        ],
+        [
+          21,
+          25,
+          "ITEM"
+        ],
+        [
+          26,
+          30,
+          "ITEM"
+        ],
+        [
+          31,
+          35,
+          "ITEM"
+        ],
+        [
+          36,
+          40,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          9,
+          "CATEGORY"
+        ],
+        [
+          10,
+          28,
+          "ITEM"
+        ],
+        [
+          30,
+          43,
+          "ITEM"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "有害垃圾 废镍镉电池和废氧化汞电池 固体废物种类及代码SW60 、900-001-S60",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          10,
+          "ITEM"
+        ],
+        [
+          11,
+          17,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          10,
+          "ITEM"
+        ],
+        [
+          11,
+          22,
+          "ITEM"
+        ],
+        [
+          26,
+          44,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "有害垃圾 废镍镉电池和废氧化汞电池 固体废物种类及代码SW60 、900-001-S60",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          10,
+          "ITEM"
+        ],
+        [
+          11,
+          17,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          5,
+          10,
+          "ITEM"
+        ],
+        [
+          11,
+          22,
+          "ITEM"
+        ],
+        [
+          26,
+          44,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "盛放湿垃圾的废弃塑料袋，应投放至干垃圾收集容器中。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "CATEGORY"
+        ],
+        [
+          6,
+          11,
+          "ITEM"
+        ],
+        [
+          16,
+          19,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          2,
+          5,
+          "CATEGORY"
+        ],
+        [
+          8,
+          11,
+          "ITEM"
+        ],
+        [
+          15,
+          19,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    }
+  ],
+  "unique_sentences": 5,
+  "relation_pairs": 18,
+  "scope": "small single-annotator web sample; not a representative benchmark",
+  "end_to_end": {
+    "precision": 0.07692307692307693,
+    "recall": 0.05555555555555555,
+    "f1": 0.06451612903225808,
+    "true_positive": 1,
+    "predicted": 13,
+    "gold": 18
+  },
+  "cases": [
+    {
+      "text": "可回收物：指废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物。",
+      "gold": [
+        [
+          "废塑料",
+          "BELONGS_TO",
+          "可回收物"
+        ],
+        [
+          "废玻璃制品",
+          "BELONGS_TO",
+          "可回收物"
+        ],
+        [
+          "废纸张",
+          "BELONGS_TO",
+          "可回收物"
+        ],
+        [
+          "废织物",
+          "BELONGS_TO",
+          "可回收物"
+        ],
+        [
+          "废金属",
+          "BELONGS_TO",
+          "可回收物"
+        ]
+      ],
+      "predicted": [
+        [
+          "指废纸张、废塑料、废玻璃制品、废金",
+          "BELONGS_TO",
+          "可回收物"
+        ],
+        [
+          "指废纸张、废塑料、废玻璃制品、废金",
+          "BELONGS_TO",
+          "织物等适宜回"
+        ]
+      ]
+    },
+    {
+      "text": "有害垃圾：指废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。",
+      "gold": [
+        [
+          "废油漆",
+          "BELONGS_TO",
+          "有害垃圾"
+        ],
+        [
+          "废灯管",
+          "BELONGS_TO",
+          "有害垃圾"
+        ],
+        [
+          "废电池",
+          "BELONGS_TO",
+          "有害垃圾"
+        ],
+        [
+          "废药品",
+          "BELONGS_TO",
+          "有害垃圾"
+        ]
+      ],
+      "predicted": [
+        [
+          "指废电池、废灯管、废药品、废油漆及其容器等",
+          "DISPOSE_WITH",
+          "体健康或者自然环境造成直接或者潜在危害"
+        ]
+      ]
+    },
+    {
+      "text": "湿垃圾：即易腐垃圾，指食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。",
+      "gold": [
+        [
+          "中药药渣",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "剩菜剩饭",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "瓜皮果核",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "花卉绿植",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "过期食品",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "食材废料",
+          "BELONGS_TO",
+          "湿垃圾"
+        ]
+      ],
+      "predicted": [
+        [
+          "、花卉绿植、中药药渣等易腐",
+          "BELONGS_TO",
+          "易腐垃圾"
+        ],
+        [
+          "、花卉绿植、中药药渣等易腐",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "指食材废料、剩菜剩饭、过期食品、瓜皮",
+          "BELONGS_TO",
+          "易腐垃圾"
+        ],
+        [
+          "指食材废料、剩菜剩饭、过期食品、瓜皮",
+          "BELONGS_TO",
+          "湿垃圾"
+        ]
+      ]
+    },
+    {
+      "text": "有害垃圾 废镍镉电池和废氧化汞电池 固体废物种类及代码SW60 、900-001-S60",
+      "gold": [
+        [
+          "废氧化汞电池",
+          "BELONGS_TO",
+          "有害垃圾"
+        ],
+        [
+          "废镍镉电池",
+          "BELONGS_TO",
+          "有害垃圾"
+        ]
+      ],
+      "predicted": [
+        [
+          "废氧化汞电池 固体废物",
+          "BELONGS_TO",
+          "有害垃圾"
+        ],
+        [
+          "废氧化汞电池 固体废物",
+          "DISPOSE_WITH",
+          "码SW60 、900-001-S60"
+        ],
+        [
+          "废镍镉电池",
+          "BELONGS_TO",
+          "有害垃圾"
+        ],
+        [
+          "废镍镉电池",
+          "DISPOSE_WITH",
+          "码SW60 、900-001-S60"
+        ]
+      ]
+    },
+    {
+      "text": "盛放湿垃圾的废弃塑料袋，应投放至干垃圾收集容器中。",
+      "gold": [
+        [
+          "废弃塑料袋",
+          "BELONGS_TO",
+          "干垃圾"
+        ]
+      ],
+      "predicted": [
+        [
+          "塑料袋",
+          "BELONGS_TO",
+          "湿垃圾"
+        ],
+        [
+          "塑料袋",
+          "BELONGS_TO",
+          "至干垃圾"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3949 @@
+{
+  "nodes": [
+    {
+      "id": "959696713f8d8e2bfe55",
+      "name": "报纸",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d2899f971b7dca1c8395",
+      "name": "可回收物",
+      "kind": "CATEGORY"
+    },
+    {
+      "id": "4aca85dd09c3a27154bc",
+      "name": "保持清洁干燥",
+      "kind": "METHOD"
+    },
+    {
+      "id": "9503edbe22896db8b6be",
+      "name": "旧书",
+      "kind": "ITEM"
+    },
+    {
+      "id": "19b6c4eafccda65ee290",
+      "name": "杂志",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2b2f6e28cc74964ec57d",
+      "name": "纸箱",
+      "kind": "ITEM"
+    },
+    {
+      "id": "43445d204e35266cdacb",
+      "name": "纸板",
+      "kind": "ITEM"
+    },
+    {
+      "id": "bb1380e0094fe7ff3300",
+      "name": "打印纸",
+      "kind": "ITEM"
+    },
+    {
+      "id": "3dac29e6115fbd387b6b",
+      "name": "信封",
+      "kind": "ITEM"
+    },
+    {
+      "id": "b05aef060004e7f31ad4",
+      "name": "练习本",
+      "kind": "ITEM"
+    },
+    {
+      "id": "5e0513dbfebd2635c3ce",
+      "name": "宣传单",
+      "kind": "ITEM"
+    },
+    {
+      "id": "92c1d307a2dde3f4357f",
+      "name": "包装纸",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4c00432458a73c1bd41c",
+      "name": "纸袋",
+      "kind": "ITEM"
+    },
+    {
+      "id": "f914853efef3dba04d64",
+      "name": "挂历",
+      "kind": "ITEM"
+    },
+    {
+      "id": "6408ecbe74935dc334fd",
+      "name": "硬纸盒",
+      "kind": "ITEM"
+    },
+    {
+      "id": "f6fcf235f3b90e874941",
+      "name": "说明书",
+      "kind": "ITEM"
+    },
+    {
+      "id": "adfe53e6cf7de807e34b",
+      "name": "纸质文件袋",
+      "kind": "ITEM"
+    },
+    {
+      "id": "136dd4cbc41f686e0fc5",
+      "name": "矿泉水瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "e7cf899008244101abf7",
+      "name": "清空内容物后投放",
+      "kind": "METHOD"
+    },
+    {
+      "id": "d1619f7612ec90cacb1d",
+      "name": "饮料塑料瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "fc44b528de6e052c0325",
+      "name": "洗发水瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4dd1bc884e05f3a08ca6",
+      "name": "沐浴露瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "bbb84d2d23050aa7970d",
+      "name": "洗衣液瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "8424129c63f75e14a1b2",
+      "name": "塑料盆",
+      "kind": "ITEM"
+    },
+    {
+      "id": "cf6e76da5e54fc0e8ace",
+      "name": "塑料桶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "de38b4122f63f47c338f",
+      "name": "塑料衣架",
+      "kind": "ITEM"
+    },
+    {
+      "id": "df7b56298cf75b6f594a",
+      "name": "饼干铁盒",
+      "kind": "ITEM"
+    },
+    {
+      "id": "a5f30a18078e16178552",
+      "name": "易拉罐",
+      "kind": "ITEM"
+    },
+    {
+      "id": "6930927a173edcfa05f1",
+      "name": "铁罐",
+      "kind": "ITEM"
+    },
+    {
+      "id": "ed47f8bed7ca5c2c2cf2",
+      "name": "不锈钢盆",
+      "kind": "ITEM"
+    },
+    {
+      "id": "8c814f858cc3715764ec",
+      "name": "铝锅",
+      "kind": "ITEM"
+    },
+    {
+      "id": "64b412ab3128a04a28f5",
+      "name": "铁锅",
+      "kind": "ITEM"
+    },
+    {
+      "id": "8f6a58285638437ebb53",
+      "name": "金属衣架",
+      "kind": "ITEM"
+    },
+    {
+      "id": "9bf278672678d1dffd74",
+      "name": "玻璃瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "dff36f1286d2e1154737",
+      "name": "包裹尖锐边角",
+      "kind": "METHOD"
+    },
+    {
+      "id": "aaf94652696c40fc10b7",
+      "name": "玻璃杯",
+      "kind": "ITEM"
+    },
+    {
+      "id": "6e6e4e3a451f8bf21699",
+      "name": "玻璃罐",
+      "kind": "ITEM"
+    },
+    {
+      "id": "02769f30ee9f887bccfe",
+      "name": "平板玻璃",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d351e204920582e45d73",
+      "name": "玻璃花瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "bb747b2faca0a863655b",
+      "name": "旧外套",
+      "kind": "ITEM"
+    },
+    {
+      "id": "55027146bc980ed1c15b",
+      "name": "旧衬衫",
+      "kind": "ITEM"
+    },
+    {
+      "id": "c863349fe173cba8cd8c",
+      "name": "旧裤子",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d600d7d1e4692eb10caa",
+      "name": "旧床单",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4b7d698b18089fb4f73c",
+      "name": "旧棉被",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2c9f91a0965af7e802c5",
+      "name": "旧窗帘",
+      "kind": "ITEM"
+    },
+    {
+      "id": "83c2d3ce977af8e21692",
+      "name": "旧毛衣",
+      "kind": "ITEM"
+    },
+    {
+      "id": "e597df61c13130263c9f",
+      "name": "旧围巾",
+      "kind": "ITEM"
+    },
+    {
+      "id": "37030f7ce0fc9a1c61b7",
+      "name": "苹果皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "8a9549714df5552ab083",
+      "name": "湿垃圾",
+      "kind": "CATEGORY"
+    },
+    {
+      "id": "da63720f88038586fd54",
+      "name": "沥干水分并去除包装",
+      "kind": "METHOD"
+    },
+    {
+      "id": "fc98acbe8e77e72eebab",
+      "name": "香蕉皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "c1dd1ea86c7b554b9132",
+      "name": "橘子皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "041b5ca02b8c0c876f0d",
+      "name": "西瓜皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "ae98e4266bbdbf11a49c",
+      "name": "梨皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "a1b87160ff245ff94de4",
+      "name": "土豆皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4336bbedfa3016668599",
+      "name": "胡萝卜皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2a429c2b32f9fdd7e306",
+      "name": "黄瓜皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "faaa5fbcf83c600ab82b",
+      "name": "菜叶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "6106524f8ca28d09ca05",
+      "name": "菜根",
+      "kind": "ITEM"
+    },
+    {
+      "id": "688356e457a87c62e672",
+      "name": "玉米粒",
+      "kind": "ITEM"
+    },
+    {
+      "id": "1d3abbe8a4d226d4f103",
+      "name": "米饭",
+      "kind": "ITEM"
+    },
+    {
+      "id": "a1acbc87ec69ea874dc2",
+      "name": "面条",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4b424171c75accfa85fc",
+      "name": "馒头",
+      "kind": "ITEM"
+    },
+    {
+      "id": "ccdb71283e3cafb76ae6",
+      "name": "面包",
+      "kind": "ITEM"
+    },
+    {
+      "id": "a44185de3ff9c2e005a5",
+      "name": "饼干",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d503fee04e315aefc1ae",
+      "name": "蛋糕",
+      "kind": "ITEM"
+    },
+    {
+      "id": "14766421239bacfa48e9",
+      "name": "茶叶渣",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d3e34d6aeafde3fed713",
+      "name": "咖啡渣",
+      "kind": "ITEM"
+    },
+    {
+      "id": "02e03e0a72f46fb8105e",
+      "name": "中药药渣",
+      "kind": "ITEM"
+    },
+    {
+      "id": "c31aabbeb6369dc6689c",
+      "name": "鸡蛋壳",
+      "kind": "ITEM"
+    },
+    {
+      "id": "912b9546203794994b67",
+      "name": "鸭蛋壳",
+      "kind": "ITEM"
+    },
+    {
+      "id": "367fac607c8022de2cb0",
+      "name": "鱼骨",
+      "kind": "ITEM"
+    },
+    {
+      "id": "fb6b5ea4f53138b33ab8",
+      "name": "鸡骨",
+      "kind": "ITEM"
+    },
+    {
+      "id": "138a3c69abc30d95a04b",
+      "name": "鸭骨",
+      "kind": "ITEM"
+    },
+    {
+      "id": "b3dd9362978983071034",
+      "name": "虾壳",
+      "kind": "ITEM"
+    },
+    {
+      "id": "0beb3d54a1b279656b73",
+      "name": "蟹壳",
+      "kind": "ITEM"
+    },
+    {
+      "id": "9812a35a03e8610a6f13",
+      "name": "鱼内脏",
+      "kind": "ITEM"
+    },
+    {
+      "id": "816547e39cf127c3453b",
+      "name": "猪肉",
+      "kind": "ITEM"
+    },
+    {
+      "id": "21463415e07d4660e542",
+      "name": "牛肉",
+      "kind": "ITEM"
+    },
+    {
+      "id": "5f62049a8e09179f6e2f",
+      "name": "鸡肉",
+      "kind": "ITEM"
+    },
+    {
+      "id": "20a408e87cad909be84d",
+      "name": "鱼肉",
+      "kind": "ITEM"
+    },
+    {
+      "id": "93df475e382e0a9ada2b",
+      "name": "果肉",
+      "kind": "ITEM"
+    },
+    {
+      "id": "ce74363350415bc1a5c1",
+      "name": "葡萄皮",
+      "kind": "ITEM"
+    },
+    {
+      "id": "9097473e3fc2ab87dca6",
+      "name": "落花",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d01423106c69634c3e78",
+      "name": "枯叶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "f4d689d3efb8012395d2",
+      "name": "过期豆腐",
+      "kind": "ITEM"
+    },
+    {
+      "id": "3346ff2fe87becb49f3b",
+      "name": "过期酸奶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2be5fb779954f122ec40",
+      "name": "过期米饭",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d71be21a974c647dccd6",
+      "name": "花生壳",
+      "kind": "ITEM"
+    },
+    {
+      "id": "b9ef00976e60805ae47d",
+      "name": "用过的纸巾",
+      "kind": "ITEM"
+    },
+    {
+      "id": "46363a4b7a51708340b0",
+      "name": "干垃圾",
+      "kind": "CATEGORY"
+    },
+    {
+      "id": "06ad8a3204c56e06d986",
+      "name": "装袋后投入干垃圾容器",
+      "kind": "METHOD"
+    },
+    {
+      "id": "0c805f6577ecf7c252e9",
+      "name": "厕纸",
+      "kind": "ITEM"
+    },
+    {
+      "id": "0272112ec2c74846cf18",
+      "name": "湿巾",
+      "kind": "ITEM"
+    },
+    {
+      "id": "70cdeae4da69d12a0e28",
+      "name": "尿不湿",
+      "kind": "ITEM"
+    },
+    {
+      "id": "1973aeb722bf41d89674",
+      "name": "卫生巾",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2303c326079f3c447799",
+      "name": "棉签",
+      "kind": "ITEM"
+    },
+    {
+      "id": "6d0069b6ab48cf7a4f11",
+      "name": "棉球",
+      "kind": "ITEM"
+    },
+    {
+      "id": "7dea0ac2409b91b51e5d",
+      "name": "创可贴",
+      "kind": "ITEM"
+    },
+    {
+      "id": "9a71db6a775720c42245",
+      "name": "胶带",
+      "kind": "ITEM"
+    },
+    {
+      "id": "cbc3baaaacf8760cad9f",
+      "name": "口香糖",
+      "kind": "ITEM"
+    },
+    {
+      "id": "747d95aa48908592efe9",
+      "name": "烟蒂",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2a800fb71b6693189f61",
+      "name": "扫地灰尘",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4fc6656f4bc7d7bef5d8",
+      "name": "头发",
+      "kind": "ITEM"
+    },
+    {
+      "id": "64a1af8083930851ca9d",
+      "name": "尘土",
+      "kind": "ITEM"
+    },
+    {
+      "id": "92f39b55a507e35a1043",
+      "name": "猫砂",
+      "kind": "ITEM"
+    },
+    {
+      "id": "69d2d2221caf1d2a0ca7",
+      "name": "狗尿垫",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d9cd82332ac9d46011cb",
+      "name": "污损塑料袋",
+      "kind": "ITEM"
+    },
+    {
+      "id": "bcb9a095567ad9e8e249",
+      "name": "污损食品袋",
+      "kind": "ITEM"
+    },
+    {
+      "id": "da740a72e9cb8599a02f",
+      "name": "破陶瓷碗",
+      "kind": "ITEM"
+    },
+    {
+      "id": "305c24031d6afef1cf15",
+      "name": "破陶瓷杯",
+      "kind": "ITEM"
+    },
+    {
+      "id": "09ce17cb7cc89e374fed",
+      "name": "一次性筷子",
+      "kind": "ITEM"
+    },
+    {
+      "id": "9bbecd79607c27521dce",
+      "name": "牙签",
+      "kind": "ITEM"
+    },
+    {
+      "id": "255dfc8d12fddb12e8b6",
+      "name": "竹签",
+      "kind": "ITEM"
+    },
+    {
+      "id": "a5a73855fa0804039f13",
+      "name": "木屑",
+      "kind": "ITEM"
+    },
+    {
+      "id": "69085143c5bd48871c35",
+      "name": "铅笔",
+      "kind": "ITEM"
+    },
+    {
+      "id": "23faad0871f312dc9f16",
+      "name": "橡皮擦",
+      "kind": "ITEM"
+    },
+    {
+      "id": "93ab61c642ca649dacbc",
+      "name": "圆珠笔",
+      "kind": "ITEM"
+    },
+    {
+      "id": "5844646fd543e15dcc42",
+      "name": "干燥剂",
+      "kind": "ITEM"
+    },
+    {
+      "id": "193c59e0977d84ab20ae",
+      "name": "保鲜膜",
+      "kind": "ITEM"
+    },
+    {
+      "id": "c14f48e6c1b15d087baf",
+      "name": "废镍镉电池",
+      "kind": "ITEM"
+    },
+    {
+      "id": "dd42234821bf2dd613e2",
+      "name": "有害垃圾",
+      "kind": "CATEGORY"
+    },
+    {
+      "id": "102fae8bc78a62a6e4f3",
+      "name": "保持完整并单独投放",
+      "kind": "METHOD"
+    },
+    {
+      "id": "06bcb3a2d59f35aa13ca",
+      "name": "废氧化汞电池",
+      "kind": "ITEM"
+    },
+    {
+      "id": "dc1e602bc292469b2ace",
+      "name": "废荧光灯管",
+      "kind": "ITEM"
+    },
+    {
+      "id": "2c604c1410800981c543",
+      "name": "废节能灯",
+      "kind": "ITEM"
+    },
+    {
+      "id": "52c44284a5ea934e5898",
+      "name": "含汞温度计",
+      "kind": "ITEM"
+    },
+    {
+      "id": "e5f6913e514de7ef4f39",
+      "name": "含汞血压计",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4590343e62b30f2682a2",
+      "name": "废胶片",
+      "kind": "ITEM"
+    },
+    {
+      "id": "f4bdc2ec0378df8d70bd",
+      "name": "废相纸",
+      "kind": "ITEM"
+    },
+    {
+      "id": "23607ed1f7d4a59906ae",
+      "name": "过期药片",
+      "kind": "ITEM"
+    },
+    {
+      "id": "904f76931df5b8507478",
+      "name": "连同包装单独投放",
+      "kind": "METHOD"
+    },
+    {
+      "id": "29c77caa2a1bb797db5f",
+      "name": "过期胶囊",
+      "kind": "ITEM"
+    },
+    {
+      "id": "911f4ad1b042d76f0c36",
+      "name": "过期药膏",
+      "kind": "ITEM"
+    },
+    {
+      "id": "1b8b021656dd48d1e2c0",
+      "name": "过期药水",
+      "kind": "ITEM"
+    },
+    {
+      "id": "3f190cce5ba651fef38c",
+      "name": "废油漆",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4ea5994873fe4689a57a",
+      "name": "油漆桶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "165be74a04b866c2dcb8",
+      "name": "废溶剂",
+      "kind": "ITEM"
+    },
+    {
+      "id": "4830b182181de92d1a37",
+      "name": "溶剂瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "532647883943c5c21334",
+      "name": "废矿物油",
+      "kind": "ITEM"
+    },
+    {
+      "id": "ca8c06b7a5455521f041",
+      "name": "矿物油瓶",
+      "kind": "ITEM"
+    },
+    {
+      "id": "af0f865baa9147baff5f",
+      "name": "废杀虫剂",
+      "kind": "ITEM"
+    },
+    {
+      "id": "417bd43729bd0b8204cd",
+      "name": "杀虫剂罐",
+      "kind": "ITEM"
+    },
+    {
+      "id": "7fb34c3af2fb865f3482",
+      "name": "废消毒剂",
+      "kind": "ITEM"
+    },
+    {
+      "id": "d976caebe9235cc5f732",
+      "name": "消毒剂瓶",
+      "kind": "ITEM"
+    }
+  ],
+  "edges": [
+    {
+      "id": "3a6f3b642daed82edc01",
+      "source": "959696713f8d8e2bfe55",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：报纸属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "065dc1d6bee526b3c638",
+      "source": "959696713f8d8e2bfe55",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "报纸的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1c7cb88a2c804b76d02c",
+      "source": "9503edbe22896db8b6be",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧书属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c81a9032045f31219fa3",
+      "source": "9503edbe22896db8b6be",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧书的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d22e80a0fd27848bfa4f",
+      "source": "19b6c4eafccda65ee290",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：杂志属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "7b9de391b1033e6de398",
+      "source": "19b6c4eafccda65ee290",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "杂志的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2d35f8036c70ca0f0b80",
+      "source": "2b2f6e28cc74964ec57d",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：纸箱属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d567e95b1b9c415b465d",
+      "source": "2b2f6e28cc74964ec57d",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "纸箱的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "cefba5f2f3105a8db982",
+      "source": "43445d204e35266cdacb",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：纸板属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d70fd1d9e97c95277339",
+      "source": "43445d204e35266cdacb",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "纸板的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8f566bc06cb5d19456be",
+      "source": "bb1380e0094fe7ff3300",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：打印纸属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "622d404c8295d7806fe9",
+      "source": "bb1380e0094fe7ff3300",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "打印纸的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "59982942155775827030",
+      "source": "3dac29e6115fbd387b6b",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：信封属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "dcd82dab8b715a8237f2",
+      "source": "3dac29e6115fbd387b6b",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "信封的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e2b075aba393da3af4e8",
+      "source": "b05aef060004e7f31ad4",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：练习本属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ac47f756b3caec8fe98f",
+      "source": "b05aef060004e7f31ad4",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "练习本的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f4cf60419ad016c296ec",
+      "source": "5e0513dbfebd2635c3ce",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：宣传单属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9ebb5da3259433b493a0",
+      "source": "5e0513dbfebd2635c3ce",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "宣传单的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3e1cf103b254306a70c1",
+      "source": "92c1d307a2dde3f4357f",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：包装纸属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "da1758063bfda6aad44b",
+      "source": "92c1d307a2dde3f4357f",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "包装纸的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "74e6599225edd289700a",
+      "source": "4c00432458a73c1bd41c",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：纸袋属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "caee3509e07191125488",
+      "source": "4c00432458a73c1bd41c",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "纸袋的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5baa0ecee8d51385bd82",
+      "source": "f914853efef3dba04d64",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：挂历属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "774686fd759888f215d7",
+      "source": "f914853efef3dba04d64",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "挂历的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "dd585aab04bfbf3bb3bb",
+      "source": "6408ecbe74935dc334fd",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：硬纸盒属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1ee1b442808e5e61abd5",
+      "source": "6408ecbe74935dc334fd",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "硬纸盒的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a5977308b291a2120f72",
+      "source": "f6fcf235f3b90e874941",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：说明书属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "7e89c7c8653a8704d6ae",
+      "source": "f6fcf235f3b90e874941",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "说明书的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "01d370d982fcd55ff641",
+      "source": "adfe53e6cf7de807e34b",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：纸质文件袋属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8c2fcf9e7f79dd6e54c6",
+      "source": "adfe53e6cf7de807e34b",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "纸质文件袋的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c96094fa14bff4992aa6",
+      "source": "136dd4cbc41f686e0fc5",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：矿泉水瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a1b4180b43722e306fd9",
+      "source": "136dd4cbc41f686e0fc5",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "矿泉水瓶的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2338dbd4befb26e41f98",
+      "source": "d1619f7612ec90cacb1d",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：饮料塑料瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "07ff423c64f6efea0fb9",
+      "source": "d1619f7612ec90cacb1d",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "饮料塑料瓶的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a0a4da497e586f68c267",
+      "source": "fc44b528de6e052c0325",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：洗发水瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "0b346b5ff0aaa0095d61",
+      "source": "fc44b528de6e052c0325",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "洗发水瓶的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2df389ffd25156aa784a",
+      "source": "4dd1bc884e05f3a08ca6",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：沐浴露瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3931b23c594167406899",
+      "source": "4dd1bc884e05f3a08ca6",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "沐浴露瓶的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "fd3439118d693a8005f5",
+      "source": "bbb84d2d23050aa7970d",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：洗衣液瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d62400f2453acd530df1",
+      "source": "bbb84d2d23050aa7970d",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "洗衣液瓶的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5772b8ac2fb8d218f125",
+      "source": "8424129c63f75e14a1b2",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：塑料盆属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "82b628c097424fc2dd5e",
+      "source": "8424129c63f75e14a1b2",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "塑料盆的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5641a89cd087c9c2f603",
+      "source": "cf6e76da5e54fc0e8ace",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：塑料桶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a612870a907138c04f2d",
+      "source": "cf6e76da5e54fc0e8ace",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "塑料桶的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "28908b606b50cfdecf70",
+      "source": "de38b4122f63f47c338f",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：塑料衣架属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a3acb2a1fe1c70fc003a",
+      "source": "de38b4122f63f47c338f",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "塑料衣架的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5b846cc6b02a3fe44405",
+      "source": "df7b56298cf75b6f594a",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：饼干铁盒属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c78d15c1491462f737e8",
+      "source": "df7b56298cf75b6f594a",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "饼干铁盒的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b92d1f195739aa88353c",
+      "source": "a5f30a18078e16178552",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：易拉罐属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "35b92139c8f60f370bb2",
+      "source": "a5f30a18078e16178552",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "易拉罐的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f56af64e1dfede83df3c",
+      "source": "6930927a173edcfa05f1",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：铁罐属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "982597152554291bd147",
+      "source": "6930927a173edcfa05f1",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "铁罐的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9359ff38e5daaaa294d4",
+      "source": "ed47f8bed7ca5c2c2cf2",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：不锈钢盆属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "024263383f15f368b4ae",
+      "source": "ed47f8bed7ca5c2c2cf2",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "不锈钢盆的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "646192570fb4cd520cc9",
+      "source": "8c814f858cc3715764ec",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：铝锅属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "273c04b5829e8b24f28b",
+      "source": "8c814f858cc3715764ec",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "铝锅的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a3f3a5c034fafe1ffb73",
+      "source": "64b412ab3128a04a28f5",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：铁锅属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1d2abbc3d5a24c29193e",
+      "source": "64b412ab3128a04a28f5",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "铁锅的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3d988a8c5c441942e689",
+      "source": "8f6a58285638437ebb53",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：金属衣架属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "567acde521c25d5a4b4b",
+      "source": "8f6a58285638437ebb53",
+      "target": "e7cf899008244101abf7",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "金属衣架的示例投放要求：清空内容物后投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8010630739718e569419",
+      "source": "9bf278672678d1dffd74",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：玻璃瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e8fe3ba15cf1db092c87",
+      "source": "9bf278672678d1dffd74",
+      "target": "dff36f1286d2e1154737",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "玻璃瓶的示例投放要求：包裹尖锐边角。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "24a56e34699384c6d86f",
+      "source": "aaf94652696c40fc10b7",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：玻璃杯属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "91b941fe1edfdcc3ce12",
+      "source": "aaf94652696c40fc10b7",
+      "target": "dff36f1286d2e1154737",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "玻璃杯的示例投放要求：包裹尖锐边角。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "64f4edbcf57468e025b7",
+      "source": "6e6e4e3a451f8bf21699",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：玻璃罐属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8c296a7dc0c7bf963fb8",
+      "source": "6e6e4e3a451f8bf21699",
+      "target": "dff36f1286d2e1154737",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "玻璃罐的示例投放要求：包裹尖锐边角。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3d18200121a731012741",
+      "source": "02769f30ee9f887bccfe",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：平板玻璃属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c93419bc3d68a20a05c2",
+      "source": "02769f30ee9f887bccfe",
+      "target": "dff36f1286d2e1154737",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "平板玻璃的示例投放要求：包裹尖锐边角。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c46d8fd4098b0d3cc547",
+      "source": "d351e204920582e45d73",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：玻璃花瓶属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "368e90fb23cf9a785e1e",
+      "source": "d351e204920582e45d73",
+      "target": "dff36f1286d2e1154737",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "玻璃花瓶的示例投放要求：包裹尖锐边角。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "030133a88b0802cf23d0",
+      "source": "bb747b2faca0a863655b",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧外套属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "15154ee77861b10965f5",
+      "source": "bb747b2faca0a863655b",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧外套的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "7f522408540f1a08e308",
+      "source": "55027146bc980ed1c15b",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧衬衫属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5b4fdbccf5a082724998",
+      "source": "55027146bc980ed1c15b",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧衬衫的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1122c4803597512afdb8",
+      "source": "c863349fe173cba8cd8c",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧裤子属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8892650b6d997a452daa",
+      "source": "c863349fe173cba8cd8c",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧裤子的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "0d7377432bac7fd59848",
+      "source": "d600d7d1e4692eb10caa",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧床单属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b522dbef05b0e3080c52",
+      "source": "d600d7d1e4692eb10caa",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧床单的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "43c92ff7f9301dc1a7dd",
+      "source": "4b7d698b18089fb4f73c",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧棉被属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e08c53e8fa73f8331170",
+      "source": "4b7d698b18089fb4f73c",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧棉被的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2e17f34081e92597e8d2",
+      "source": "2c9f91a0965af7e802c5",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧窗帘属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "334cc777276788ac73aa",
+      "source": "2c9f91a0965af7e802c5",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧窗帘的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "dc681b0b23ccbf4c12a0",
+      "source": "83c2d3ce977af8e21692",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧毛衣属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f4c39e4a8f0ad7a733e5",
+      "source": "83c2d3ce977af8e21692",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧毛衣的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "46ddb45ab294027b0947",
+      "source": "e597df61c13130263c9f",
+      "target": "d2899f971b7dca1c8395",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：旧围巾属于可回收物。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "355cf94f2ac737bfeba2",
+      "source": "e597df61c13130263c9f",
+      "target": "4aca85dd09c3a27154bc",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "旧围巾的示例投放要求：保持清洁干燥。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e311f26c7512d3c81644",
+      "source": "37030f7ce0fc9a1c61b7",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：苹果皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e049c72f3982205dcbb6",
+      "source": "37030f7ce0fc9a1c61b7",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "苹果皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a420a4d2d8738910db1f",
+      "source": "fc98acbe8e77e72eebab",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：香蕉皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ab552e91eca8ac60b849",
+      "source": "fc98acbe8e77e72eebab",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "香蕉皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9b29c77b63d624b090f5",
+      "source": "c1dd1ea86c7b554b9132",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：橘子皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e2f2547b766fa2ed1991",
+      "source": "c1dd1ea86c7b554b9132",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "橘子皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1805d0971be6aadbc6f1",
+      "source": "041b5ca02b8c0c876f0d",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：西瓜皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c93161d20dcfe87fb108",
+      "source": "041b5ca02b8c0c876f0d",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "西瓜皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "03aa3c6a14325c457624",
+      "source": "ae98e4266bbdbf11a49c",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：梨皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4817f84d332b33edb3ce",
+      "source": "ae98e4266bbdbf11a49c",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "梨皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a18813016f3de1fc5f56",
+      "source": "a1b87160ff245ff94de4",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：土豆皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d36bbb1eff5ff81d92ce",
+      "source": "a1b87160ff245ff94de4",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "土豆皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c411be130fa15fb6be26",
+      "source": "4336bbedfa3016668599",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：胡萝卜皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d28a73ef39e7ebefe754",
+      "source": "4336bbedfa3016668599",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "胡萝卜皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "eb2b78b62c04867c03fd",
+      "source": "2a429c2b32f9fdd7e306",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：黄瓜皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b9be00e29e42beff7f8b",
+      "source": "2a429c2b32f9fdd7e306",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "黄瓜皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5df32a5ec87d2b35218c",
+      "source": "faaa5fbcf83c600ab82b",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：菜叶属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3d87106ab5a97e47a602",
+      "source": "faaa5fbcf83c600ab82b",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "菜叶的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "921d486adc97f79ddff8",
+      "source": "6106524f8ca28d09ca05",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：菜根属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "210a58a5cae40edc5bc8",
+      "source": "6106524f8ca28d09ca05",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "菜根的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "40b0620adba013c258ae",
+      "source": "688356e457a87c62e672",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：玉米粒属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b7100c523bd44f89ff66",
+      "source": "688356e457a87c62e672",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "玉米粒的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "613542c0327e0762f68c",
+      "source": "1d3abbe8a4d226d4f103",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：米饭属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "824243c76e29a6bd8d31",
+      "source": "1d3abbe8a4d226d4f103",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "米饭的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "6025297827d62a85143e",
+      "source": "a1acbc87ec69ea874dc2",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：面条属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "79d72d62c2d8115d2854",
+      "source": "a1acbc87ec69ea874dc2",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "面条的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "65024d12561a23b79804",
+      "source": "4b424171c75accfa85fc",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：馒头属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e5d117d8f2091a0e9aed",
+      "source": "4b424171c75accfa85fc",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "馒头的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ec7a088cf32bb3ee2a3d",
+      "source": "ccdb71283e3cafb76ae6",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：面包属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "192ca42b444e05d7c956",
+      "source": "ccdb71283e3cafb76ae6",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "面包的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "0daf8860827cc27d7b27",
+      "source": "a44185de3ff9c2e005a5",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：饼干属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "25045f543f5df9b6f017",
+      "source": "a44185de3ff9c2e005a5",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "饼干的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "149c73c24a844ee58a66",
+      "source": "d503fee04e315aefc1ae",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：蛋糕属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5d75b68d46e4287ae9f8",
+      "source": "d503fee04e315aefc1ae",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "蛋糕的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "553d3176bb164cfd2469",
+      "source": "14766421239bacfa48e9",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：茶叶渣属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9619285bb5187644085e",
+      "source": "14766421239bacfa48e9",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "茶叶渣的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "67c2dc58944446bcef9c",
+      "source": "d3e34d6aeafde3fed713",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：咖啡渣属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "430423d9eeeb0a5a5edf",
+      "source": "d3e34d6aeafde3fed713",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "咖啡渣的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3b054a54f68e682ed359",
+      "source": "02e03e0a72f46fb8105e",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：中药药渣属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ea4c09336d6354cb10f7",
+      "source": "02e03e0a72f46fb8105e",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "中药药渣的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ec5134e5208ecb99ea5c",
+      "source": "c31aabbeb6369dc6689c",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鸡蛋壳属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "6011f2409218d85d3b65",
+      "source": "c31aabbeb6369dc6689c",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鸡蛋壳的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a18b20f7fe3fe3ed83c3",
+      "source": "912b9546203794994b67",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鸭蛋壳属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4d4cc24c81fa8a513d6d",
+      "source": "912b9546203794994b67",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鸭蛋壳的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "30b6d1a095675fb3a4c1",
+      "source": "367fac607c8022de2cb0",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鱼骨属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f0cb9e15f217ce88dbce",
+      "source": "367fac607c8022de2cb0",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鱼骨的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "074f1af69e7d8ce73ca1",
+      "source": "fb6b5ea4f53138b33ab8",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鸡骨属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e377de7fe6d9b96abb21",
+      "source": "fb6b5ea4f53138b33ab8",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鸡骨的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "6e34b1524731a4e34afc",
+      "source": "138a3c69abc30d95a04b",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鸭骨属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "121a750019a5487f8842",
+      "source": "138a3c69abc30d95a04b",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鸭骨的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9f5d05b7d3e3ce93ee44",
+      "source": "b3dd9362978983071034",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：虾壳属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "fafd0353b7e2c5fa0b25",
+      "source": "b3dd9362978983071034",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "虾壳的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "99c7a7f5f6f5eb330bc3",
+      "source": "0beb3d54a1b279656b73",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：蟹壳属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "638e4f1294f0354c6035",
+      "source": "0beb3d54a1b279656b73",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "蟹壳的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "858c82cefd52f02ad3b3",
+      "source": "9812a35a03e8610a6f13",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鱼内脏属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "031c579d380d812a2a24",
+      "source": "9812a35a03e8610a6f13",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鱼内脏的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "46fbb1ab7e85e2303024",
+      "source": "816547e39cf127c3453b",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：猪肉属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1483155de4cc0b96eb74",
+      "source": "816547e39cf127c3453b",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "猪肉的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2931c2393ef8892f8424",
+      "source": "21463415e07d4660e542",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：牛肉属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8d84e7fba41c438ee89a",
+      "source": "21463415e07d4660e542",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "牛肉的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "95ca7d049e3fb0a27f31",
+      "source": "5f62049a8e09179f6e2f",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鸡肉属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "94961dd4d3909d36a50f",
+      "source": "5f62049a8e09179f6e2f",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鸡肉的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "10a44b0a77255e60e6aa",
+      "source": "20a408e87cad909be84d",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：鱼肉属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3389d676f54deda84398",
+      "source": "20a408e87cad909be84d",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "鱼肉的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f5e5d328d845e4578831",
+      "source": "93df475e382e0a9ada2b",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：果肉属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "922aab199622f736e84d",
+      "source": "93df475e382e0a9ada2b",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "果肉的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "eac73a5823f5974fb33f",
+      "source": "ce74363350415bc1a5c1",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：葡萄皮属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "97248fefd8efef6b301c",
+      "source": "ce74363350415bc1a5c1",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "葡萄皮的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "329c82c51d18a286b228",
+      "source": "9097473e3fc2ab87dca6",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：落花属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "115fa2ed233930279570",
+      "source": "9097473e3fc2ab87dca6",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "落花的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "48bcf03dfe2a49e9d0d4",
+      "source": "d01423106c69634c3e78",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：枯叶属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5e58ec1edcdf0c1754ac",
+      "source": "d01423106c69634c3e78",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "枯叶的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e5771311d657be3b6bae",
+      "source": "f4d689d3efb8012395d2",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期豆腐属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b207145dbf48691ebb9b",
+      "source": "f4d689d3efb8012395d2",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期豆腐的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "6e725de98328b5503712",
+      "source": "3346ff2fe87becb49f3b",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期酸奶属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1146715247c99100dd44",
+      "source": "3346ff2fe87becb49f3b",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期酸奶的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "49ce7c09ac7c30687f73",
+      "source": "2be5fb779954f122ec40",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期米饭属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b412293f39d3201df667",
+      "source": "2be5fb779954f122ec40",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期米饭的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4be15c6dd69b37cd09dd",
+      "source": "d71be21a974c647dccd6",
+      "target": "8a9549714df5552ab083",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：花生壳属于湿垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "795ff41d53bb5b54efb2",
+      "source": "d71be21a974c647dccd6",
+      "target": "da63720f88038586fd54",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "花生壳的示例投放要求：沥干水分并去除包装。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2af89e2fc11a25acabc1",
+      "source": "b9ef00976e60805ae47d",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：用过的纸巾属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b033696d847533abe9f9",
+      "source": "b9ef00976e60805ae47d",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "用过的纸巾的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "18e3f9738df5ce157c4d",
+      "source": "0c805f6577ecf7c252e9",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：厕纸属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "5e92c80625723b52c48a",
+      "source": "0c805f6577ecf7c252e9",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "厕纸的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "006b6a02e5e0aa45627b",
+      "source": "0272112ec2c74846cf18",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：湿巾属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d376b8fa0627abe22e7e",
+      "source": "0272112ec2c74846cf18",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "湿巾的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "942d77c260154fb8c0ae",
+      "source": "70cdeae4da69d12a0e28",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：尿不湿属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "12078f34a329a0893740",
+      "source": "70cdeae4da69d12a0e28",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "尿不湿的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a90fc52719e6f5655764",
+      "source": "1973aeb722bf41d89674",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：卫生巾属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a7e23b6c55272c4028b9",
+      "source": "1973aeb722bf41d89674",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "卫生巾的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8a87a19320ac9a7b8e4b",
+      "source": "2303c326079f3c447799",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：棉签属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "36dcdb70bd017fe20375",
+      "source": "2303c326079f3c447799",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "棉签的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9d7a226ca37259a86e23",
+      "source": "6d0069b6ab48cf7a4f11",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：棉球属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "637ed8a4ba8aac50ecc6",
+      "source": "6d0069b6ab48cf7a4f11",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "棉球的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a70882291d0c8ec1e515",
+      "source": "7dea0ac2409b91b51e5d",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：创可贴属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b5a32354f9ccb5c51402",
+      "source": "7dea0ac2409b91b51e5d",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "创可贴的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2db13614e571363088d0",
+      "source": "9a71db6a775720c42245",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：胶带属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ad9b9de000180c65d948",
+      "source": "9a71db6a775720c42245",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "胶带的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "18d99350b4538cbf4d0b",
+      "source": "cbc3baaaacf8760cad9f",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：口香糖属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "aea69b60b78528b8ff89",
+      "source": "cbc3baaaacf8760cad9f",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "口香糖的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "fe87861c3fa7ee1e3729",
+      "source": "747d95aa48908592efe9",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：烟蒂属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4b82c833362e7573a87d",
+      "source": "747d95aa48908592efe9",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "烟蒂的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f3ec81d45d3331c906b6",
+      "source": "2a800fb71b6693189f61",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：扫地灰尘属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c204fca728b7da45d9c6",
+      "source": "2a800fb71b6693189f61",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "扫地灰尘的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "0109f05b95548c5e4bfc",
+      "source": "4fc6656f4bc7d7bef5d8",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：头发属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f8c0336f5914f29f823e",
+      "source": "4fc6656f4bc7d7bef5d8",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "头发的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "47d2feb5bd7fe88f5a39",
+      "source": "64a1af8083930851ca9d",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：尘土属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e54d7c3c453bcd28a671",
+      "source": "64a1af8083930851ca9d",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "尘土的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "01a39e14faae693ea62a",
+      "source": "92f39b55a507e35a1043",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：猫砂属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9e44f798c94f3f4af0b1",
+      "source": "92f39b55a507e35a1043",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "猫砂的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f0db858f47d66ac9a951",
+      "source": "69d2d2221caf1d2a0ca7",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：狗尿垫属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "bc596fe2adea3142fbad",
+      "source": "69d2d2221caf1d2a0ca7",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "狗尿垫的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1e6272b345132603812b",
+      "source": "d9cd82332ac9d46011cb",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：污损塑料袋属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "aa1efbfa4d0c86a7c92d",
+      "source": "d9cd82332ac9d46011cb",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "污损塑料袋的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b8ff0abddedd834aaa40",
+      "source": "bcb9a095567ad9e8e249",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：污损食品袋属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "09a60220aafe94c25858",
+      "source": "bcb9a095567ad9e8e249",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "污损食品袋的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f8c512204afb9b892a03",
+      "source": "da740a72e9cb8599a02f",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：破陶瓷碗属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "441d0e804f8e0b5e2dc6",
+      "source": "da740a72e9cb8599a02f",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "破陶瓷碗的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e3b28d0081eb34c9aac1",
+      "source": "305c24031d6afef1cf15",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：破陶瓷杯属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c4de109c7a27d8d31f94",
+      "source": "305c24031d6afef1cf15",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "破陶瓷杯的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "c405691df443b19a40b7",
+      "source": "09ce17cb7cc89e374fed",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：一次性筷子属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ecd8b876e85ef8ebcbe1",
+      "source": "09ce17cb7cc89e374fed",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "一次性筷子的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "666167c609dd7cc7f34d",
+      "source": "9bbecd79607c27521dce",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：牙签属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "171a637458868b49bdca",
+      "source": "9bbecd79607c27521dce",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "牙签的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "765278408d45591151f9",
+      "source": "255dfc8d12fddb12e8b6",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：竹签属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "94bb6c4696dfd075c4d5",
+      "source": "255dfc8d12fddb12e8b6",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "竹签的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "2d9f6ce2d5c2c7ffee55",
+      "source": "a5a73855fa0804039f13",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：木屑属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "1050c5c147f481bd085b",
+      "source": "a5a73855fa0804039f13",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "木屑的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "067e927fd5ff1c1069b9",
+      "source": "69085143c5bd48871c35",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：铅笔属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ffcc4e035fe8b49b3257",
+      "source": "69085143c5bd48871c35",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "铅笔的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "bce1a4e9e87f6169b311",
+      "source": "23faad0871f312dc9f16",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：橡皮擦属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8bca9583a965a1ebd3af",
+      "source": "23faad0871f312dc9f16",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "橡皮擦的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "98c201e6c768c3ce538a",
+      "source": "93ab61c642ca649dacbc",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：圆珠笔属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d4ac8fd04c05be36652f",
+      "source": "93ab61c642ca649dacbc",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "圆珠笔的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3323d36a52bbf588a649",
+      "source": "5844646fd543e15dcc42",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：干燥剂属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9599b83330792244be91",
+      "source": "5844646fd543e15dcc42",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "干燥剂的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "45102655895eac2f84e7",
+      "source": "193c59e0977d84ab20ae",
+      "target": "46363a4b7a51708340b0",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：保鲜膜属于干垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "fc337330e3896be7cbea",
+      "source": "193c59e0977d84ab20ae",
+      "target": "06ad8a3204c56e06d986",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "保鲜膜的示例投放要求：装袋后投入干垃圾容器。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "32816f19d7849b0a20be",
+      "source": "c14f48e6c1b15d087baf",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废镍镉电池属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "731a1bb3b07b796120ff",
+      "source": "c14f48e6c1b15d087baf",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废镍镉电池的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "cd2252a99119a349e60a",
+      "source": "06bcb3a2d59f35aa13ca",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废氧化汞电池属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "799ee6fd2c22b97c46a3",
+      "source": "06bcb3a2d59f35aa13ca",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废氧化汞电池的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d443ad1298c42b546f98",
+      "source": "dc1e602bc292469b2ace",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废荧光灯管属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "0dd241362ae078d892a6",
+      "source": "dc1e602bc292469b2ace",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废荧光灯管的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "dde553aa14aeabda49f6",
+      "source": "2c604c1410800981c543",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废节能灯属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d0db07445ba5ba8450ab",
+      "source": "2c604c1410800981c543",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废节能灯的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4cf07033674166fb69bd",
+      "source": "52c44284a5ea934e5898",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：含汞温度计属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4786428a125ec28727b8",
+      "source": "52c44284a5ea934e5898",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "含汞温度计的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "35498f636c6088c42882",
+      "source": "e5f6913e514de7ef4f39",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：含汞血压计属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "39a1fdcf5c8e94767c34",
+      "source": "e5f6913e514de7ef4f39",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "含汞血压计的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f17fa9bc4ae6e38dab9d",
+      "source": "4590343e62b30f2682a2",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废胶片属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8265a48c50a9c1c6f006",
+      "source": "4590343e62b30f2682a2",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废胶片的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ee85111b67d028ebe30d",
+      "source": "f4bdc2ec0378df8d70bd",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废相纸属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "7908ae1bbe2f894ba9d6",
+      "source": "f4bdc2ec0378df8d70bd",
+      "target": "102fae8bc78a62a6e4f3",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废相纸的示例投放要求：保持完整并单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "a3baab712ff59d091182",
+      "source": "23607ed1f7d4a59906ae",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期药片属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8b54e81fea3907699d27",
+      "source": "23607ed1f7d4a59906ae",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期药片的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "13f56ca40fa4798f7e5b",
+      "source": "29c77caa2a1bb797db5f",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期胶囊属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e95a1c00c3a842e74a87",
+      "source": "29c77caa2a1bb797db5f",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期胶囊的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3d4e232144a79949ced5",
+      "source": "911f4ad1b042d76f0c36",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期药膏属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "8b35d67f47fcd3ba96c7",
+      "source": "911f4ad1b042d76f0c36",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期药膏的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d49df0f9da0d4a141c1e",
+      "source": "1b8b021656dd48d1e2c0",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：过期药水属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f9ddcd6cca6e06afac36",
+      "source": "1b8b021656dd48d1e2c0",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "过期药水的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "990d77caa5c7c19a922e",
+      "source": "3f190cce5ba651fef38c",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废油漆属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "9cb5fff12260ad026326",
+      "source": "3f190cce5ba651fef38c",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废油漆的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f10b7bc19423930a8d48",
+      "source": "4ea5994873fe4689a57a",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：油漆桶属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "39617de5e8384becbab2",
+      "source": "4ea5994873fe4689a57a",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "油漆桶的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "3877e424d001cb5ca13a",
+      "source": "165be74a04b866c2dcb8",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废溶剂属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "08124e8dbe1bbd9a9685",
+      "source": "165be74a04b866c2dcb8",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废溶剂的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "b214b3aac4026e977a78",
+      "source": "4830b182181de92d1a37",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：溶剂瓶属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "6690ef80b80a4b99b54a",
+      "source": "4830b182181de92d1a37",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "溶剂瓶的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "f89cf8cb01741883689d",
+      "source": "532647883943c5c21334",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废矿物油属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "d4d2e41a95fe8c1494a6",
+      "source": "532647883943c5c21334",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废矿物油的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "ded681bea9d61ec4f9ca",
+      "source": "ca8c06b7a5455521f041",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：矿物油瓶属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e035cd138f947069e1da",
+      "source": "ca8c06b7a5455521f041",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "矿物油瓶的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e2f57988ef67b86b63bc",
+      "source": "af0f865baa9147baff5f",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废杀虫剂属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "37a24535f4cdbe408c93",
+      "source": "af0f865baa9147baff5f",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废杀虫剂的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e3ce522613f0ea5744dc",
+      "source": "417bd43729bd0b8204cd",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：杀虫剂罐属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "4d5a8d4864fe2e54bf52",
+      "source": "417bd43729bd0b8204cd",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "杀虫剂罐的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "e9e6a728d23d307d5e29",
+      "source": "7fb34c3af2fb865f3482",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：废消毒剂属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "7af9f5583ed444ba1d13",
+      "source": "7fb34c3af2fb865f3482",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "废消毒剂的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "adedd708a2976847811c",
+      "source": "d976caebe9235cc5f732",
+      "target": "dd42234821bf2dd613e2",
+      "relation": "BELONGS_TO",
+      "label": "属于",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "依据分类定义人工编制的典型示例：消毒剂瓶属于有害垃圾。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    },
+    {
+      "id": "7a7fe8a7ccb9f7cffbef",
+      "source": "d976caebe9235cc5f732",
+      "target": "904f76931df5b8507478",
+      "relation": "DISPOSE_WITH",
+      "label": "投放要求",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+      "evidence": "消毒剂瓶的示例投放要求：连同包装单独投放。",
+      "region": "上海",
+      "provenance": "curated_example",
+      "review_status": "teaching_seed"
+    }
+  ],
+  "region": "上海",
+  "data_note": "人工编制的教学目录；不是网页模型抽取准确率的证明。"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "shanghai_2024",
+    "url": "https://www.shanghai.gov.cn/gwk/search/content/40b9feaa-53db-472f-8a6b-2c3cf0465def",
+    "kind": "government",
+    "purpose": "分类定义与投放指导",
+    "access_date": "2026-09-14"
+  },
+  {
+    "id": "shanghai_2018",
+    "url": "https://www.shanghai.gov.cn/nw42851/20200823/0001-42851_55319.html",
+    "kind": "government",
+    "purpose": "历史分类示例补充，以2024指引为主要口径",
+    "access_date": "2026-09-14"
+  },
+  {
+    "id": "encyclopedia",
+    "url": "https://zh.wikipedia.org/wiki/上海市生活垃圾分类制度",
+    "kind": "encyclopedia",
+    "purpose": "网页采集与清洗实验",
+    "license": "页面许可见网站，维基文本通常为 CC BY-SA；保留链接与归属"
+  }
+]

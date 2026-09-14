@@ -1,0 +1,79 @@
+2026-09-14 21:23:18.149090: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-14 21:23:20.147033: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-14 21:23:20.605666: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-14 21:23:20.751798: E tensorflow/core/util/util.cc:131] oneDNN supports DT_BOOL only on platforms with AVX-512. Falling back to the default Eigen-based implementation if present.
+{
+  "ner": {
+    "precision": 0.7619047619047619,
+    "recall": 0.8,
+    "f1": 0.7804878048780488,
+    "true_positive": 32,
+    "predicted": 42,
+    "gold": 40
+  },
+  "relation": {
+    "accuracy": 0.75,
+    "macro_f1": 0.7495726495726496,
+    "per_class": {
+      "NO_RELATION": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "BELONGS_TO": {
+        "precision": 1.0,
+        "recall": 0.4444444444444444,
+        "f1": 0.6153846153846153
+      },
+      "DISPOSE_WITH": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        0,
+        0,
+        5
+      ]
+    ],
+    "label_order": [
+      "NO_RELATION",
+      "BELONGS_TO",
+      "DISPOSE_WITH"
+    ],
+    "evaluation": "gold entity spans; not end-to-end triple score"
+  },
+  "sentences": 20,
+  "scope": "authored development challenge; informed augmentation; not blind or web test",
+  "end_to_end": {
+    "neural": {
+      "precision": 0.5454545454545454,
+      "recall": 0.42857142857142855,
+      "f1": 0.4799999999999999,
+      "true_positive": 6,
+      "predicted": 11,
+      "gold": 14
+    },
+    "baseline": {
+      "precision": 1.0,
+      "recall": 0.35714285714285715,
+      "f1": 0.5263157894736842,
+      "true_positive": 5,
+      "predicted": 5,
+      "gold": 14
+    }
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "ner": {
+    "precision": 1.0,
+    "recall": 0.9837662337662337,
+    "f1": 0.9918166939443536,
+    "true_positive": 1515,
+    "predicted": 1515,
+    "gold": 1540
+  },
+  "relation": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "NO_RELATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "BELONGS_TO": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "DISPOSE_WITH": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        220,
+        0,
+        0
+      ],
+      [
+        0,
+        352,
+        0
+      ],
+      [
+        0,
+        0,
+        198
+      ]
+    ],
+    "label_order": [
+      "NO_RELATION",
+      "BELONGS_TO",
+      "DISPOSE_WITH"
+    ],
+    "evaluation": "gold entity spans; not end-to-end triple score"
+  },
+  "errors": [
+    {
+      "text": "整理家务时，练习本的垃圾类型为可回收物，需分类投放。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          15,
+          19,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          15,
+          19,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "假如练习本属于可回收物，该如何处理？",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "干垃圾包括胶带。",
+      "gold_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ],
+        [
+          5,
+          7,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          3,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "处理家庭废弃物时，宣传单的垃圾类型为可回收物，需分类投放。这里讨论的是生活废弃物。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "请大家注意：丢弃的练习本可按可回收物处置。物品的状态也需要核对。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "处理家庭废弃物时，将练习本说成湿垃圾是错误的说法。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          10,
+          13,
+          "ITEM"
+        ],
+        [
+          15,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          15,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "根据分类说明，一般而言，干垃圾这一类别包含胶带。大家应当认真分类。",
+      "gold_entities": [
+        [
+          12,
+          15,
+          "CATEGORY"
+        ],
+        [
+          21,
+          23,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          12,
+          15,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "投放练习本时，需要保持清洁干燥。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "处理家庭废弃物时，宣传单这种东西算作可回收物，请分类收集。大家应当认真分类。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          18,
+          22,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "投放宣传单时，需要保持清洁干燥。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          9,
+          15,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "投放胶带时，需要装袋后投入干垃圾容器。",
+      "gold_entities": [
+        [
+          2,
+          4,
+          "ITEM"
+        ],
+        [
+          8,
+          18,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          8,
+          18,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "假如胶带属于干垃圾，该如何处理？",
+      "gold_entities": [
+        [
+          2,
+          4,
+          "ITEM"
+        ],
+        [
+          6,
+          9,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          6,
+          9,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "日常生活中，如果练习本被当成可回收物，还需要进一步确认。物品的状态也需要核对。",
+      "gold_entities": [
+        [
+          8,
+          11,
+          "ITEM"
+        ],
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "在这个例子里，有关练习本的处理，请记住要保持清洁干燥。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          9,
+          12,
+          "ITEM"
+        ],
+        [
+          20,
+          26,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          20,
+          26,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "可回收物包括宣传单。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "在这个例子里，一般而言，可回收物这一类别包含练习本。这里讨论的是生活废弃物。",
+      "gold_entities": [
+        [
+          12,
+          16,
+          "CATEGORY"
+        ],
+        [
+          22,
+          25,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          12,
+          16,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "可回收物包括练习本。",
+      "gold_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ],
+        [
+          6,
+          9,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          0,
+          4,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "日常生活中的练习本，其类别是可回收物。",
+      "gold_entities": [
+        [
+          6,
+          9,
+          "ITEM"
+        ],
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          14,
+          18,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "处理家庭废弃物时，有人问练习本能否归到可回收物，这里没有给出答案。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          12,
+          15,
+          "ITEM"
+        ],
+        [
+          19,
+          23,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          19,
+          23,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "请将练习本按可回收物进行分类。",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          6,
+          10,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          6,
+          10,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "假如宣传单属于可回收物，该如何处理？",
+      "gold_entities": [
+        [
+          2,
+          5,
+          "ITEM"
+        ],
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          7,
+          11,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "处理家庭废弃物时，如果宣传单被当成可回收物，还需要进一步确认。请遵守投放点规定。",
+      "gold_entities": [
+        [
+          11,
+          14,
+          "ITEM"
+        ],
+        [
+          17,
+          21,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          17,
+          21,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "NO_RELATION",
+      "predicted_relation": "NO_RELATION"
+    },
+    {
+      "text": "处理家庭废弃物时，有关宣传单的处理，请记住要保持清洁干燥。",
+      "gold_entities": [
+        [
+          11,
+          14,
+          "ITEM"
+        ],
+        [
+          22,
+          28,
+          "METHOD"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          22,
+          28,
+          "METHOD"
+        ]
+      ],
+      "gold_relation": "DISPOSE_WITH",
+      "predicted_relation": "DISPOSE_WITH"
+    },
+    {
+      "text": "根据分类说明，根据物品的情况，练习本可以划为可回收物。大家应当认真分类。",
+      "gold_entities": [
+        [
+          15,
+          18,
+          "ITEM"
+        ],
+        [
+          22,
+          26,
+          "CATEGORY"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          22,
+          26,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    },
+    {
+      "text": "日常生活中，一般而言，可回收物这一类别包含宣传单。这里讨论的是生活废弃物。",
+      "gold_entities": [
+        [
+          11,
+          15,
+          "CATEGORY"
+        ],
+        [
+          21,
+          24,
+          "ITEM"
+        ]
+      ],
+      "predicted_entities": [
+        [
+          11,
+          15,
+          "CATEGORY"
+        ]
+      ],
+      "gold_relation": "BELONGS_TO",
+      "predicted_relation": "BELONGS_TO"
+    }
+  ],
+  "best_epoch": 3,
+  "epochs": 24,
+  "seed": 42,
+  "seconds": 347.40149929999825,
+  "tensorflow": "2.20.0",
+  "python": "3.12.14",
+  "dataset": {
+    "train": 3255,
+    "val": 665,
+    "test": 770
+  },
+  "limitation": "模板生成语料，按物品隔离；只验证教学流程，不代表自然网页泛化性能。"
+}
