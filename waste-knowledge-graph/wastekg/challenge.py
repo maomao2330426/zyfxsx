@@ -1,6 +1,7 @@
 """人工撰写的改写开发挑战集；曾用于指导数据增强方向。"""
 from .common import *
 from .prepare import example
+import argparse
 
 CASES=[
  ('吃完留下的香蕉皮，分类投放时算作湿垃圾。','香蕉皮','湿垃圾','CATEGORY','BELONGS_TO'),
@@ -29,10 +30,13 @@ CASES=[
 def main():
     from .inference import Extractor,baseline
     from .train import evaluate,prf
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--model-dir',type=Path,default=ROOT/'models')
+    parser.add_argument('--output',type=Path,default=ROOT/'reports'/'challenge_metrics.json')
+    args=parser.parse_args()
     records=[example(*case,template='challenge') for case in CASES]
     for r in records:r['provenance']='authored_paraphrase_challenge'
-    write_jsonl(DATA/'processed'/'challenge.jsonl',records)
-    model=Extractor();metrics=evaluate(model.ner,model.re,records,model.vocab)
+    model=Extractor(args.model_dir);metrics=evaluate(model.ner,model.re,records,model.vocab)
     output=[];counts={'neural':[0,0,0],'baseline':[0,0,0]}
     for s in records:
         gold=set() if s['relation']=='NO_RELATION' else {(s['entities'][0]['text'],s['relation'],s['entities'][1]['text'])}
@@ -45,7 +49,9 @@ def main():
         output.append(result)
     metrics.update({'sentences':len(records),'scope':'authored development challenge; informed augmentation; not blind or web test',
                     'end_to_end':{mode:{**prf(*c),'true_positive':c[0],'predicted':c[1],'gold':c[2]} for mode,c in counts.items()},'cases':output})
-    write_json(ROOT/'reports'/'challenge_metrics.json',metrics)
+    metrics['model_name']=args.model_dir.name
+    metrics['model_signature']=model_signature(args.model_dir)
+    write_json(args.output,metrics)
     print(json.dumps({k:v for k,v in metrics.items() if k not in ('cases','errors')},ensure_ascii=False,indent=2))
 
 

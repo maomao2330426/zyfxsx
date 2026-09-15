@@ -1,5 +1,6 @@
 """直接从抓取文本建立小型人工标注网页评测集，不改写网页原句。"""
 from .common import *
+import argparse
 
 
 def make_records():
@@ -32,8 +33,12 @@ def make_records():
 def main():
     from .inference import Extractor
     from .train import evaluate,prf
-    records=make_records();write_jsonl(DATA/'processed'/'web_gold.jsonl',records)
-    model=Extractor();result=evaluate(model.ner,model.re,records,model.vocab)
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--model-dir',type=Path,default=ROOT/'models')
+    parser.add_argument('--output',type=Path,default=ROOT/'reports'/'web_metrics.json')
+    args=parser.parse_args()
+    records=make_records()
+    model=Extractor(args.model_dir);result=evaluate(model.ner,model.re,records,model.vocab)
     # NER 按唯一网页句子计数，关系评估按有向实体对计数。
     unique={r['text']:r for r in records}
     result['ner']=evaluate(model.ner,model.re,list(unique.values()),model.vocab)['ner']
@@ -47,7 +52,9 @@ def main():
     result.update({'unique_sentences':len(unique),'relation_pairs':len(records),
                    'scope':'small single-annotator web sample; not a representative benchmark',
                    'end_to_end':{**prf(tp,predicted,gold),'true_positive':tp,'predicted':predicted,'gold':gold},'cases':cases})
-    write_json(ROOT/'reports'/'web_metrics.json',result)
+    result['model_name']=args.model_dir.name
+    result['model_signature']=model_signature(args.model_dir)
+    write_json(args.output,result)
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 

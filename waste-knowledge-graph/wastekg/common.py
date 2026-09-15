@@ -19,7 +19,7 @@ def read_json(path):
 def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8')
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
 
 
 def read_jsonl(path):
@@ -39,6 +39,16 @@ def clean_text(text):
 
 def identity(kind, name):
     return hashlib.sha256((kind + ':' + name).encode()).hexdigest()[:20]
+
+
+def model_signature(directory):
+    digest=hashlib.sha256()
+    for name in ('ner.weights.h5','relation.weights.h5','vocab.json'):
+        path=Path(directory)/name
+        if not path.exists():return None
+        digest.update(name.encode())
+        digest.update(path.read_bytes())
+    return digest.hexdigest()
 
 
 def spans(tags, text):

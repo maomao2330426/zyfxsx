@@ -3,6 +3,7 @@ import argparse
 import itertools
 import numpy as np
 from .common import *
+from .graph import load_catalog
 
 
 class Extractor:
@@ -57,10 +58,10 @@ class Extractor:
 def baseline(text):
     if not text.strip() or len(text)>MAX_LEN:
         raise ValueError('请输入 1 至 128 字的单句')
-    rows=read_json(DATA/'catalog.json')
+    rows=load_catalog()
     terms={r['name']:'ITEM' for r in rows}
     terms.update({c:'CATEGORY' for c in CATEGORIES})
-    terms.update({r['method']:'METHOD' for r in rows})
+    terms.update({r['method']:'METHOD' for r in rows if r.get('method')})
     occupied=set();entities=[]
     for term,kind in sorted(terms.items(),key=lambda t:-len(t[0])):
         for match in re.finditer(re.escape(term),text):
@@ -86,7 +87,8 @@ def baseline(text):
 def main():
     p=argparse.ArgumentParser();p.add_argument('text',nargs='?');p.add_argument('--baseline',action='store_true')
     p.add_argument('--input',type=Path);p.add_argument('--output',type=Path,default=DATA/'candidates.jsonl')
-    args=p.parse_args();model=None if args.baseline else Extractor()
+    p.add_argument('--model-dir',type=Path,default=ROOT/'models')
+    args=p.parse_args();model=None if args.baseline else Extractor(args.model_dir)
     if args.input:
         candidates=[]
         processed=skipped=0

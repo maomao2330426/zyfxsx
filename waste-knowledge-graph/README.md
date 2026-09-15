@@ -4,9 +4,66 @@
 
 项目采用上海四分类：**可回收物、干垃圾、湿垃圾、有害垃圾**。“可回收垃圾”作为“可回收物”的查询别名。目录为典型物态的教学示例；不自动把模型猜测写成分类事实。
 
+## 2026年9月15日数据集迭代
+
+已接入用户提供的 `garbage_cleaned.csv` 与 `garbage_cleaned.jsonl`。两者均为3712条、内容一致的同一份数据，不能相加为7424条。归一化后新增3622个物品，加上原134条目录，共3756个物品、3767个节点、3890条关系。
+
+- “厨余垃圾 → 湿垃圾”“其他垃圾 → 干垃圾”仅做名称映射；外部数据没有地区信息，不能视为已满足上海实际规则。
+- 外部标签标记为 `source_labeled`，逐条保留原名称、类别、来源行号和链接；不标记成人工审核通过。
+- 87组与原目录同名同类，2条规范化重复归并；“竹签”的1组分类冲突隔离，保留原目录，不进入新训练集。
+- 所有新数据缺少描述与投放方法，因此只生成分类关系，不自动补造 `DISPOSE_WITH`。
+- 页面增加来源筛选、12/24/48条可选分页、证据问答和数据质量审计；图谱与列表同步翻页，快速切换查询不再被旧响应覆盖。
+
+原始输入、原训练集和原模型均保留。新增3622条已正式合并到 `data/catalog.json`，主目录共3756条；原134条目录完整备份为 `data/catalog.before_external_merge.json`。来源审计目录为 `data/imported/`，新实验语料为 `data/processed_external/`，新权重为 `models_external/`。
+
+### 图谱布局修复与查看方式
+
+图谱已改为类别、物品卡片、投放方法的分层布局，完整名称自动换行，不再挤在固定小圆环中。默认每页12个物品，图谱与下方列表使用同一页；可改为24或48个。支持缩放、拖动画布、拖动节点、适应全部、重置布局和展开大图；按Escape退出大图。大图只显示当前页，使用分页浏览全部3756条，不会一次堆叠全部节点。
+
+**已有服务必须先在原终端按Ctrl+C停止，再重新运行 `start.cmd`，浏览器按Ctrl+F5刷新。** 只刷新浏览器不能替换旧进程中的后端分页代码。
+
+本次55项Python测试分组通过、5项前端DOM测试通过；实际SVG渲染已检查，无标签重叠或节点裁切，但当前环境没有可连接的浏览器，未做完整浏览器截图验收。更大范围合并测试仍触发过本机Python 3.11原生访问异常，不宣称运行时问题已修复。详见 `reports/图谱布局与数据合并说明.md`。
+
+### 重现数据接入
+
+```powershell
+python -m wastekg.dataset garbage_cleaned.jsonl --compare garbage_cleaned.csv --merge-catalog
+python -m wastekg.graph
+```
+
+CSV与JSONL任选一种作为主输入；另一种用于一致性核验。命令可重复执行，更新派生产物但不修改原文件。人工调整原目录后，应重新执行接入、构图并重启服务。
+
+### 独立训练及评估
+
+```powershell
+python -m wastekg.train --data-dir data/processed_external --output models_external --epochs 3 --balance-relations
+python -m wastekg.web_eval --model-dir models_external --output models_external/web_metrics.json
+python -m wastekg.challenge --model-dir models_external --output models_external/challenge_metrics.json
+```
+
+生成训练15938句、验证3416句、测试3442句；按规范物品名分组隔离，字表只由训练集生成。它们是由分类标签合成的弱监督模板，并非真实网页BIO人工标注。关系类别采用可选的逆平方根频率加权，缓解投放关系样本少的问题。
+
+**新模型只作为实验产物，不替换默认模型。** 本轮3轮训练在模板测试集的实体F1为99.97%、关系宏F1为100%，但网页与改写集端到端F1均为0；原模型在同环境复测分别为6.45%、48%。这说明模板高分不等于泛化提升，不能用这些结果宣称实用性提高。后续需要真实语句标注、独立来源留出集及更丰富的句式，再决定是否替换模型。
+
+默认 `start.cmd` 使用原模型和扩展目录；若需要查看新模型实验，可运行 `start.cmd --model-dir models_external`。评测文件绑定模型权重与字表指纹，重训后须重新评测，不能挪用旧分数。浏览器“实验与评估”展示当前选择模型的结果。
+
+### 本轮验证
+
+Python回归测试与前端DOM测试命令如下。前端测试需Node.js和一个运行在18765端口的本地服务，不是浏览器截图验收。
+
+```powershell
+python -m pytest -q --junitxml=reports/tests_iteration.xml
+python -m wastekg.server --port 18765 --model-dir models_external
+# 在另一终端执行
+npm ci
+npm test
+```
+
+本轮53项Python测试曾整套通过并按文件复测通过，3项前端DOM测试通过。但本机Python 3.11在重复运行时出现间歇性原生访问异常，关闭oneDNN也未完全消除；不能宣称本机运行时已稳定，正式演示前需在干净的Python 3.12环境复验。测试进程默认关闭oneDNN，训练和服务配置不变。详细结果、限制和验收步骤见 `reports/迭代验收说明.md`。本机已在仓库上一级的 `.venv` 中安装依赖，`start.cmd` 会自动识别；手动执行可用 `..\.venv\Scripts\python.exe` 替换命令中的 `python`。
+
 ## 先运行演示
 
-需要 Python 3.12。在本目录打开终端：
+需要 Python 3.11 或 3.12（本轮使用3.11）。在本目录打开终端：
 
 ```powershell
 py -3.12 -m venv .venv
@@ -108,7 +165,7 @@ docker compose -p wastekg-course up -d
 
 首次启动需等待数据库就绪，再执行导入。默认 URI 为 `bolt://localhost:7687`，用户名为 `neo4j`，数据库为 `neo4j`；可分别设置 `NEO4J_URI`、`NEO4J_USER`、`NEO4J_DATABASE`。密码只从环境读取，源码不保存实际密码。
 
-打开 **http://localhost:7474**，连接本机 Neo4j，执行 `neo4j/queries.cypher` 中的语句查看图谱。所有节点有 `WasteKGEntity` 标签，并通过 `kind` 属性区分 ITEM、CATEGORY、METHOD。导入使用唯一约束、MERGE 和参数，不删除既有数据库数据；再次导入不会创建重复节点或关系。数据规模见 `reports/neo4j_import.json`。
+打开 **http://localhost:7474**，连接本机 Neo4j，执行 `neo4j/queries.cypher` 中的语句查看图谱。所有节点有 `WasteKGEntity` 标签，并通过 `kind` 属性区分 ITEM、CATEGORY、METHOD。导入使用唯一约束、MERGE 和参数，不删除既有数据库数据；再次导入不会创建重复节点或关系。默认包含标记为 `source_labeled` 的外部关系，若只导入原目录可加 `--teaching-only`。此参数不删除历史上已导入的外部关系；需要纯教学视图时应按审核状态筛选。当前 `reports/neo4j_import.json` 是旧版134条目录的历史导入记录，不是此次扩展图谱已入库的证明。本轮Docker服务未运行，未执行真实Neo4j导入。
 
 本地 Web 图谱读取 JSON；Neo4j 的真实可视化在 Neo4j Browser 中展示，二者不可混称。数据库服务仅映射本机端口。停止本项目容器使用 `docker compose -p wastekg-course stop`，保留数据库卷。
 
@@ -117,13 +174,15 @@ docker compose -p wastekg-course up -d
 | 接口 | 功能 |
 |---|---|
 | `GET /api/stats` | 目录规模、来源与模型文件状态 |
-| `GET /api/search?q=香蕉皮&category=湿垃圾` | 名称和类别筛选 |
+| `GET /api/search?q=香蕉皮&category=湿垃圾&limit=24&offset=0&scope=all` | 分页查询；scope支持all、teaching、external；单页最多150条 |
 | `GET /api/graph?q=香蕉皮` | 关联子图 |
 | `GET /api/metrics` | 主实验及额外评测结果 |
+| `GET /api/qa?q=阿司匹林是什么垃圾` | 明确物品的证据问答，未知与模糊物态不自动推断 |
+| `GET /api/dataset` | 双格式一致性、来源、类别分布与冲突摘要 |
 | `POST /api/extract` | JSON 请求，字段 `text` 与 `mode`，mode 为 neural 或 baseline |
 
 服务只监听 `127.0.0.1`，适合个人课程演示，不是多用户生产服务。没有登录、权限管理或公网部署能力。
 
 ## 来源与许可
 
-分类依据和论文链接见 `reports/项目报告.md`。采集的维基百科文本需保留页面归属与 CC BY-SA 等原许可；政府网页文本保留来源。原创项目代码采用 MIT，数据和第三方模型依赖不因此变更其原有许可。这里训练的权重只在所附教学语料上训练，没有使用第三方预训练模型。
+分类来源见 `data/sources.json`，新增数据处理与验证结果见 `reports/迭代验收说明.md`。采集文本和外部分类表需保留原来源及许可；外部分类表的许可尚未核实，不能因项目采用MIT就视作允许任意分发。原创项目代码采用MIT，数据和依赖的许可不因此改变。原权重使用教学语料，新实验权重使用标签生成的弱监督语料，均未使用第三方预训练模型。

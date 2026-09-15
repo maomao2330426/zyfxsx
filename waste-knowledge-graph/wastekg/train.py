@@ -2,6 +2,8 @@ import argparse
 import random
 import time
 import platform
+import hashlib
+from collections import Counter
 import numpy as np
 import tensorflow as tf
 from .common import *
@@ -48,6 +50,7 @@ def main():
     p.add_argument('--seed',type=int,default=42)
     p.add_argument('--data-dir',type=Path,default=DATA/'processed')
     p.add_argument('--output',type=Path,default=ROOT/'models')
+    p.add_argument('--balance-relations',action='store_true')
     args=p.parse_args()
     if args.epochs<1 or args.batch_size<1:
         p.error('epochs 和 batch-size 必须为正数')
@@ -59,7 +62,14 @@ def main():
     sets = [set(s['group'] for s in data) for data in (train,val,test)]
     assert not (sets[0]&sets[1] or sets[0]&sets[2] or sets[1]&sets[2]), '实体分组存在泄漏'
     for data in (train,val,test):
+        if not data:
+            p.error('训练、验证与测试集均不能为空')
         for s in data: validate_sample(s)
+    counts=Counter(sample['relation'] for sample in train)
+    class_weights=np.ones(len(RELATIONS),dtype=np.float32)
+    if args.balance_relations:
+        class_weights=np.array([np.sqrt(len(train)/(len(RELATIONS)*max(1,counts[label]))) for label in RELATIONS],np.float32)
+        class_weights/=sum(class_weights[index]*counts[label] for index,label in enumerate(RELATIONS))/len(train)
     ner,re_model = BiLSTMCRF(len(vocab)), BiGRUAttention(len(vocab))
     x,y,lengths,hp,tp = encode(train[:2],vocab)
     ner(x);re_model((x,hp,tp))
@@ -75,7 +85,8 @@ def main():
         opt_ner.apply_gradients(zip(grads,ner.trainable_variables))
         with tf.GradientTape() as tape:
             logits=re_model((x,hp,tp),training=True)
-            rloss=tf.reduce_mean(tf.keras.losses.sparse_categorical_crossentropy(rel,logits,from_logits=True))
+            losses=tf.keras.losses.sparse_categorical_crossentropy(rel,logits,from_logits=True)
+            rloss=tf.reduce_mean(losses*tf.gather(class_weights,rel))
         grads=tape.gradient(rloss,re_model.trainable_variables)
         opt_re.apply_gradients(zip(grads,re_model.trainable_variables))
         return nloss,rloss
@@ -109,6 +120,12 @@ def main():
                    'tensorflow':tf.__version__,'python':platform.python_version(),
                    'dataset':{'train':len(train),'val':len(val),'test':len(test)},
                    'limitation':'模板生成语料，按物品隔离；只验证教学流程，不代表自然网页泛化性能。'})
+    manifest_path=args.data_dir/'manifest.json'
+    result['data_provenance']={'directory':args.data_dir.name,
+        'manifest':read_json(manifest_path) if manifest_path.exists() else None,
+        'split_sha256':{split:hashlib.sha256((args.data_dir/f'{split}.jsonl').read_bytes()).hexdigest() for split in ('train','val','test')},
+        'relation_class_weights':dict(zip(RELATIONS,class_weights.tolist()))}
+    result['model_signature']=model_signature(args.output)
     write_json(args.output/'metrics.json',result)
     print(json.dumps(result,ensure_ascii=False,indent=2),flush=True)
 
