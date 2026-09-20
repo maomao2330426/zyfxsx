@@ -46,6 +46,7 @@ function paintView(){
 }
 function fitGraph(){
   if(!graphView)return;
+  $('#graph').style.removeProperty('height');$('#graph-viewport').scrollTop=0;
   graphView.view={...WasteGraphLayout.bounds(graphView.nodes)};graphView.zoom=1;paintView();
 }
 function zoomGraph(factor,anchor){
@@ -67,8 +68,11 @@ function drawGraph(graph){
   const svg=$('#graph');svg.replaceChildren();
   const count=graph.nodes.filter(node=>node.kind==='ITEM').length;
   $('#graph-count').textContent='本页 '+count+' / 共 '+graph.total_items+' 个物品 · '+graph.nodes.length+' 节点 · '+graph.edges.length+' 关联';
-  const layout=WasteGraphLayout.layout(graph,svg.parentElement.clientWidth||1100);
-  graphView={nodes:layout.nodes,view:{...layout.bounds},zoom:1};paintView();
+  const width=svg.parentElement.clientWidth||1100;
+  const layout=WasteGraphLayout.layout(graph,width);
+  svg.style.height=Math.ceil(Math.max(520,layout.bounds.height*Math.min(1,width/layout.bounds.width)))+'px';
+  $('#graph-viewport').scrollTop=0;
+  graphView={nodes:layout.nodes,view:{...layout.bounds},zoom:1,layoutWidth:width};paintView();
   if(!graph.nodes.length){svg.append(svgEl('text',{x:430,y:260,'text-anchor':'middle',class:'graph-empty'},'当前筛选暂无物品，请调整查询。'));return;}
   const lookup=new Map(layout.nodes.map(node=>[node.id,node]));
   const definitions=svgEl('defs'),marker=svgEl('marker',{id:'relation-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'});
@@ -79,8 +83,20 @@ function drawGraph(graph){
     path.append(svgEl('title',{},edge.label+' · '+edge.review_status+' · '+edge.evidence));links.append(path);return {path,edge};
   });
   function updatePaths(){
+    const leftLane=Math.min(...layout.nodes.map(node=>node.x-node.width/2))-20;
+    const rightLane=Math.max(...layout.nodes.map(node=>node.x+node.width/2))+20;
     edges.forEach(({path,edge})=>{
       const source=lookup.get(edge.source),target=lookup.get(edge.target),direction=target.x>=source.x?1:-1;
+      if(graphView.layoutWidth<760){
+        if(edge.relation==='BELONGS_TO'){
+          const from=source.y-source.height/2;
+          path.setAttribute('d','M '+source.x+' '+from+' V '+(from-18)+' H '+leftLane+' V '+target.y+' H '+(target.x-target.width/2));
+        }else{
+          const from=source.y+source.height/2,to=target.y-target.height/2;
+          path.setAttribute('d','M '+source.x+' '+from+' V '+(from+18)+' H '+rightLane+' V '+(to-18)+' H '+target.x+' V '+to);
+        }
+        return;
+      }
       const from=source.x+direction*source.width/2,to=target.x-direction*target.width/2,middle=(from+to)/2;
       path.setAttribute('d','M '+from+' '+source.y+' C '+middle+' '+source.y+', '+middle+' '+target.y+', '+to+' '+target.y);
     });
@@ -130,9 +146,16 @@ $('#graph').addEventListener('wheel',event=>{if(!event.ctrlKey||!graphView)retur
 $('#zoom-in').addEventListener('click',()=>zoomGraph(1.25));
 $('#zoom-out').addEventListener('click',()=>zoomGraph(.8));
 $('#fit-graph').addEventListener('click',fitGraph);
-function expandGraph(expanded){$('#graph-card').classList.toggle('expanded',expanded);document.body.classList.toggle('graph-expanded',expanded);$('#expand-graph').textContent=expanded?'退出大图':'展开大图';$('#expand-graph').setAttribute('aria-pressed',String(expanded));fitGraph();}
+function expandGraph(expanded){$('#graph-card').classList.toggle('expanded',expanded);document.body.classList.toggle('graph-expanded',expanded);$('#expand-graph').textContent=expanded?'退出大图':'展开大图';$('#expand-graph').setAttribute('aria-pressed',String(expanded));if(currentGraph)drawGraph(currentGraph);}
 $('#expand-graph').addEventListener('click',()=>expandGraph(!$('#graph-card').classList.contains('expanded')));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&$('#graph-card').classList.contains('expanded'))expandGraph(false);});
+function reflowGraph(){
+  const width=$('#graph-viewport').clientWidth;
+  if(currentGraph&&graphView&&width>0&&Math.abs(width-graphView.layoutWidth)>1)drawGraph(currentGraph);
+}
+if(typeof ResizeObserver!=='undefined'){
+  const observer=new ResizeObserver(reflowGraph);observer.observe($('#graph-viewport'));
+}else window.addEventListener('resize',reflowGraph);
 function setChips(){document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('active',b.dataset.category===category));}
 $('#search-form').addEventListener('submit',ev=>{ev.preventDefault();search=$('#query').value.trim();refresh().catch(error);});
 document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.category;setChips();refresh().catch(error);}));

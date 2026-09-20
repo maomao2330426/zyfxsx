@@ -1,0 +1,1306 @@
+{
+  "summary": {
+    "raw_records": 3712,
+    "accepted_items": 3622,
+    "existing_matches": 87,
+    "conflict_items": 1,
+    "rejected_records": 0,
+    "duplicate_records": 2,
+    "categories": {
+      "干垃圾": 1339,
+      "可回收物": 1142,
+      "有害垃圾": 192,
+      "湿垃圾": 949
+    },
+    "raw_categories": {
+      "有害垃圾": 202,
+      "厨余垃圾": 979,
+      "可回收物": 1169,
+      "其他垃圾": 1362
+    },
+    "description_records": 0,
+    "policy": "source_labeled reference data; not human-reviewed facts or natural NER annotations",
+    "category_mapping": {
+      "可回收垃圾": "可回收物",
+      "厨余垃圾": "湿垃圾",
+      "其他垃圾": "干垃圾",
+      "其它垃圾": "干垃圾"
+    },
+    "sources": [
+      "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json"
+    ],
+    "input_file": "garbage_cleaned.jsonl",
+    "input_sha256": "1a9077c5be6fed422679f0dcd9eabfe414d9c2550e7535bcafe8d690e95ddd07",
+    "compared_file": "garbage_cleaned.csv",
+    "formats_match": true,
+    "active_catalog_items": 3756,
+    "training_sentences": {
+      "train": 15938,
+      "val": 3416,
+      "test": 3442
+    },
+    "main_catalog_merge": {
+      "merged": true,
+      "added": 3622,
+      "items": 3756,
+      "backup": "catalog.before_external_merge.json"
+    }
+  },
+  "conflicts": [
+    {
+      "name": "竹签",
+      "existing_category": "干垃圾",
+      "incoming": [
+        {
+          "name": "竹签",
+          "original_name": "竹签",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3115
+        }
+      ],
+      "reason": "同名物品分类冲突，未覆盖目录，未进入训练集"
+    }
+  ],
+  "rejected": [],
+  "existing_matches": [
+    {
+      "name": "一次性筷子",
+      "records": [
+        {
+          "name": "一次性筷子",
+          "original_name": "一次性筷子",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2324
+        }
+      ]
+    },
+    {
+      "name": "保鲜膜",
+      "records": [
+        {
+          "name": "保鲜膜",
+          "original_name": "保鲜膜",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2332
+        }
+      ]
+    },
+    {
+      "name": "信封",
+      "records": [
+        {
+          "name": "信封",
+          "original_name": "信封",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 428
+        }
+      ]
+    },
+    {
+      "name": "创可贴",
+      "records": [
+        {
+          "name": "创可贴",
+          "original_name": "创可贴",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 264
+        }
+      ]
+    },
+    {
+      "name": "包装纸",
+      "records": [
+        {
+          "name": "包装纸",
+          "original_name": "包装纸",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3048
+        }
+      ]
+    },
+    {
+      "name": "卫生巾",
+      "records": [
+        {
+          "name": "卫生巾",
+          "original_name": "卫生巾",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1502
+        }
+      ]
+    },
+    {
+      "name": "厕纸",
+      "records": [
+        {
+          "name": "厕纸",
+          "original_name": "厕纸",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 163
+        }
+      ]
+    },
+    {
+      "name": "口香糖",
+      "records": [
+        {
+          "name": "口香糖",
+          "original_name": "口香糖",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2398
+        }
+      ]
+    },
+    {
+      "name": "含汞温度计",
+      "records": [
+        {
+          "name": "含汞温度计",
+          "original_name": "含汞温度计",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 507
+        },
+        {
+          "name": "含汞温度计",
+          "original_name": "水银体温计",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3657
+        }
+      ]
+    },
+    {
+      "name": "含汞血压计",
+      "records": [
+        {
+          "name": "含汞血压计",
+          "original_name": "含汞血压计",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 508
+        }
+      ]
+    },
+    {
+      "name": "咖啡渣",
+      "records": [
+        {
+          "name": "咖啡渣",
+          "original_name": "咖啡渣",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1909
+        }
+      ]
+    },
+    {
+      "name": "圆珠笔",
+      "records": [
+        {
+          "name": "圆珠笔",
+          "original_name": "圆珠笔",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1804
+        }
+      ]
+    },
+    {
+      "name": "土豆皮",
+      "records": [
+        {
+          "name": "土豆皮",
+          "original_name": "土豆皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2088
+        }
+      ]
+    },
+    {
+      "name": "塑料桶",
+      "records": [
+        {
+          "name": "塑料桶",
+          "original_name": "塑料桶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3134
+        }
+      ]
+    },
+    {
+      "name": "塑料盆",
+      "records": [
+        {
+          "name": "塑料盆",
+          "original_name": "塑料盆",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3133
+        }
+      ]
+    },
+    {
+      "name": "塑料衣架",
+      "records": [
+        {
+          "name": "塑料衣架",
+          "original_name": "塑料衣架",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3183
+        }
+      ]
+    },
+    {
+      "name": "头发",
+      "records": [
+        {
+          "name": "头发",
+          "original_name": "头发",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2375
+        }
+      ]
+    },
+    {
+      "name": "宣传单",
+      "records": [
+        {
+          "name": "宣传单",
+          "original_name": "宣传单",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1596
+        }
+      ]
+    },
+    {
+      "name": "尘土",
+      "records": [
+        {
+          "name": "尘土",
+          "original_name": "尘土",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 205
+        }
+      ]
+    },
+    {
+      "name": "尿不湿",
+      "records": [
+        {
+          "name": "尿不湿",
+          "original_name": "尿不湿",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 138
+        }
+      ]
+    },
+    {
+      "name": "干燥剂",
+      "records": [
+        {
+          "name": "干燥剂",
+          "original_name": "干燥剂",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1732
+        }
+      ]
+    },
+    {
+      "name": "平板玻璃",
+      "records": [
+        {
+          "name": "平板玻璃",
+          "original_name": "平板玻璃",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1130
+        }
+      ]
+    },
+    {
+      "name": "废油漆",
+      "records": [
+        {
+          "name": "废油漆",
+          "original_name": "废油漆",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1145
+        }
+      ]
+    },
+    {
+      "name": "废矿物油",
+      "records": [
+        {
+          "name": "废矿物油",
+          "original_name": "废矿物油",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3622
+        }
+      ]
+    },
+    {
+      "name": "废节能灯",
+      "records": [
+        {
+          "name": "废节能灯",
+          "original_name": "废节能灯",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 728
+        }
+      ]
+    },
+    {
+      "name": "废荧光灯管",
+      "records": [
+        {
+          "name": "废荧光灯管",
+          "original_name": "废荧光灯管",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3600
+        }
+      ]
+    },
+    {
+      "name": "废镍镉电池",
+      "records": [
+        {
+          "name": "废镍镉电池",
+          "original_name": "废镍镉电池",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3626
+        }
+      ]
+    },
+    {
+      "name": "打印纸",
+      "records": [
+        {
+          "name": "打印纸",
+          "original_name": "打印纸",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3131
+        }
+      ]
+    },
+    {
+      "name": "报纸",
+      "records": [
+        {
+          "name": "报纸",
+          "original_name": "报纸",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 60
+        }
+      ]
+    },
+    {
+      "name": "挂历",
+      "records": [
+        {
+          "name": "挂历",
+          "original_name": "挂历",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 531
+        }
+      ]
+    },
+    {
+      "name": "旧书",
+      "records": [
+        {
+          "name": "旧书",
+          "original_name": "旧书",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 765
+        }
+      ]
+    },
+    {
+      "name": "旧窗帘",
+      "records": [
+        {
+          "name": "旧窗帘",
+          "original_name": "旧窗帘",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3546
+        }
+      ]
+    },
+    {
+      "name": "易拉罐",
+      "records": [
+        {
+          "name": "易拉罐",
+          "original_name": "易拉罐",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1656
+        }
+      ]
+    },
+    {
+      "name": "木屑",
+      "records": [
+        {
+          "name": "木屑",
+          "original_name": "木屑",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1574
+        }
+      ]
+    },
+    {
+      "name": "杂志",
+      "records": [
+        {
+          "name": "杂志",
+          "original_name": "杂志",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1718
+        }
+      ]
+    },
+    {
+      "name": "枯叶",
+      "records": [
+        {
+          "name": "枯叶",
+          "original_name": "枯叶",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 803
+        }
+      ]
+    },
+    {
+      "name": "棉球",
+      "records": [
+        {
+          "name": "棉球",
+          "original_name": "棉球",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1185
+        }
+      ]
+    },
+    {
+      "name": "棉签",
+      "records": [
+        {
+          "name": "棉签",
+          "original_name": "棉签",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1161
+        }
+      ]
+    },
+    {
+      "name": "橘子皮",
+      "records": [
+        {
+          "name": "橘子皮",
+          "original_name": "橘子皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1890
+        }
+      ]
+    },
+    {
+      "name": "橡皮擦",
+      "records": [
+        {
+          "name": "橡皮擦",
+          "original_name": "橡皮擦",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3008
+        }
+      ]
+    },
+    {
+      "name": "污损塑料袋",
+      "records": [
+        {
+          "name": "污损塑料袋",
+          "original_name": "污损塑料袋",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2578
+        }
+      ]
+    },
+    {
+      "name": "沐浴露瓶",
+      "records": [
+        {
+          "name": "沐浴露瓶",
+          "original_name": "沐浴露瓶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 947
+        }
+      ]
+    },
+    {
+      "name": "油漆桶",
+      "records": [
+        {
+          "name": "油漆桶",
+          "original_name": "油漆桶",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3607
+        }
+      ]
+    },
+    {
+      "name": "洗发水瓶",
+      "records": [
+        {
+          "name": "洗发水瓶",
+          "original_name": "洗发水瓶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3178
+        }
+      ]
+    },
+    {
+      "name": "洗衣液瓶",
+      "records": [
+        {
+          "name": "洗衣液瓶",
+          "original_name": "洗衣液瓶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3180
+        }
+      ]
+    },
+    {
+      "name": "湿巾",
+      "records": [
+        {
+          "name": "湿巾",
+          "original_name": "湿巾",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 740
+        }
+      ]
+    },
+    {
+      "name": "烟蒂",
+      "records": [
+        {
+          "name": "烟蒂",
+          "original_name": "烟蒂",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 325
+        }
+      ]
+    },
+    {
+      "name": "牙签",
+      "records": [
+        {
+          "name": "牙签",
+          "original_name": "牙签",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2323
+        }
+      ]
+    },
+    {
+      "name": "牛肉",
+      "records": [
+        {
+          "name": "牛肉",
+          "original_name": "牛肉",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2074
+        }
+      ]
+    },
+    {
+      "name": "狗尿垫",
+      "records": [
+        {
+          "name": "狗尿垫",
+          "original_name": "狗尿垫",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2593
+        }
+      ]
+    },
+    {
+      "name": "猪肉",
+      "records": [
+        {
+          "name": "猪肉",
+          "original_name": "猪肉",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2186
+        }
+      ]
+    },
+    {
+      "name": "猫砂",
+      "records": [
+        {
+          "name": "猫砂",
+          "original_name": "猫砂",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1243
+        }
+      ]
+    },
+    {
+      "name": "玉米粒",
+      "records": [
+        {
+          "name": "玉米粒",
+          "original_name": "玉米粒",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2244
+        }
+      ]
+    },
+    {
+      "name": "玻璃杯",
+      "records": [
+        {
+          "name": "玻璃杯",
+          "original_name": "玻璃杯",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 119
+        }
+      ]
+    },
+    {
+      "name": "玻璃瓶",
+      "records": [
+        {
+          "name": "玻璃瓶",
+          "original_name": "玻璃瓶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3069
+        }
+      ]
+    },
+    {
+      "name": "玻璃花瓶",
+      "records": [
+        {
+          "name": "玻璃花瓶",
+          "original_name": "玻璃花瓶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3478
+        }
+      ]
+    },
+    {
+      "name": "矿泉水瓶",
+      "records": [
+        {
+          "name": "矿泉水瓶",
+          "original_name": "矿泉水瓶",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 819
+        }
+      ]
+    },
+    {
+      "name": "米饭",
+      "records": [
+        {
+          "name": "米饭",
+          "original_name": "米饭",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1881
+        }
+      ]
+    },
+    {
+      "name": "纸箱",
+      "records": [
+        {
+          "name": "纸箱",
+          "original_name": "纸箱",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3200
+        },
+        {
+          "name": "纸箱",
+          "original_name": "快递纸箱",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3404
+        }
+      ]
+    },
+    {
+      "name": "练习本",
+      "records": [
+        {
+          "name": "练习本",
+          "original_name": "练习本",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 900
+        }
+      ]
+    },
+    {
+      "name": "胡萝卜皮",
+      "records": [
+        {
+          "name": "胡萝卜皮",
+          "original_name": "胡萝卜皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2217
+        }
+      ]
+    },
+    {
+      "name": "胶带",
+      "records": [
+        {
+          "name": "胶带",
+          "original_name": "胶带",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2376
+        }
+      ]
+    },
+    {
+      "name": "花生壳",
+      "records": [
+        {
+          "name": "花生壳",
+          "original_name": "花生壳",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1875
+        }
+      ]
+    },
+    {
+      "name": "苹果皮",
+      "records": [
+        {
+          "name": "苹果皮",
+          "original_name": "苹果皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1892
+        }
+      ]
+    },
+    {
+      "name": "茶叶渣",
+      "records": [
+        {
+          "name": "茶叶渣",
+          "original_name": "茶叶渣",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1916
+        }
+      ]
+    },
+    {
+      "name": "菜叶",
+      "records": [
+        {
+          "name": "菜叶",
+          "original_name": "菜叶",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1646
+        }
+      ]
+    },
+    {
+      "name": "菜根",
+      "records": [
+        {
+          "name": "菜根",
+          "original_name": "菜根",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 497
+        }
+      ]
+    },
+    {
+      "name": "葡萄皮",
+      "records": [
+        {
+          "name": "葡萄皮",
+          "original_name": "葡萄皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1139
+        }
+      ]
+    },
+    {
+      "name": "虾壳",
+      "records": [
+        {
+          "name": "虾壳",
+          "original_name": "虾壳",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1533
+        }
+      ]
+    },
+    {
+      "name": "蛋糕",
+      "records": [
+        {
+          "name": "蛋糕",
+          "original_name": "蛋糕",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 305
+        }
+      ]
+    },
+    {
+      "name": "西瓜皮",
+      "records": [
+        {
+          "name": "西瓜皮",
+          "original_name": "西瓜皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1893
+        }
+      ]
+    },
+    {
+      "name": "说明书",
+      "records": [
+        {
+          "name": "说明书",
+          "original_name": "说明书",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1020
+        }
+      ]
+    },
+    {
+      "name": "过期药片",
+      "records": [
+        {
+          "name": "过期药片",
+          "original_name": "过期药片",
+          "category": "有害垃圾",
+          "original_category": "有害垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3611
+        }
+      ]
+    },
+    {
+      "name": "铁罐",
+      "records": [
+        {
+          "name": "铁罐",
+          "original_name": "铁罐",
+          "category": "可回收物",
+          "original_category": "可回收物",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 3381
+        }
+      ]
+    },
+    {
+      "name": "铅笔",
+      "records": [
+        {
+          "name": "铅笔",
+          "original_name": "铅笔",
+          "category": "干垃圾",
+          "original_category": "其他垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1158
+        }
+      ]
+    },
+    {
+      "name": "面包",
+      "records": [
+        {
+          "name": "面包",
+          "original_name": "面包",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1013
+        }
+      ]
+    },
+    {
+      "name": "面条",
+      "records": [
+        {
+          "name": "面条",
+          "original_name": "面条",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1422
+        }
+      ]
+    },
+    {
+      "name": "饼干",
+      "records": [
+        {
+          "name": "饼干",
+          "original_name": "饼干",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 114
+        }
+      ]
+    },
+    {
+      "name": "馒头",
+      "records": [
+        {
+          "name": "馒头",
+          "original_name": "馒头",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 980
+        }
+      ]
+    },
+    {
+      "name": "香蕉皮",
+      "records": [
+        {
+          "name": "香蕉皮",
+          "original_name": "香蕉皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1891
+        }
+      ]
+    },
+    {
+      "name": "鱼内脏",
+      "records": [
+        {
+          "name": "鱼内脏",
+          "original_name": "鱼内脏",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1723
+        }
+      ]
+    },
+    {
+      "name": "鱼肉",
+      "records": [
+        {
+          "name": "鱼肉",
+          "original_name": "鱼肉",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1944
+        }
+      ]
+    },
+    {
+      "name": "鸡肉",
+      "records": [
+        {
+          "name": "鸡肉",
+          "original_name": "鸡肉",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1942
+        }
+      ]
+    },
+    {
+      "name": "鸡蛋壳",
+      "records": [
+        {
+          "name": "鸡蛋壳",
+          "original_name": "鸡蛋壳",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2167
+        }
+      ]
+    },
+    {
+      "name": "鸭蛋壳",
+      "records": [
+        {
+          "name": "鸭蛋壳",
+          "original_name": "鸭蛋壳",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2135
+        }
+      ]
+    },
+    {
+      "name": "鸭骨",
+      "records": [
+        {
+          "name": "鸭骨",
+          "original_name": "鸭骨",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 1607
+        }
+      ]
+    },
+    {
+      "name": "黄瓜皮",
+      "records": [
+        {
+          "name": "黄瓜皮",
+          "original_name": "黄瓜皮",
+          "category": "湿垃圾",
+          "original_category": "厨余垃圾",
+          "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
+          "source": "garbage-classification-data",
+          "source_record": 2144
+        }
+      ]
+    }
+  ]
+}

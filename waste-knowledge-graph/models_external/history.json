@@ -1,0 +1,23 @@
+[
+  {
+    "epoch": 1,
+    "ner_loss": 0.8983930340078702,
+    "relation_loss": 0.04546662770358658,
+    "val_ner_f1": 0.9973653395784543,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 2,
+    "ner_loss": 0.006911929788042766,
+    "relation_loss": 6.136356285686168e-05,
+    "val_ner_f1": 0.9979508196721312,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 3,
+    "ner_loss": 0.0024833311679893296,
+    "relation_loss": 2.6481584925975812e-05,
+    "val_ner_f1": 0.9988290398126464,
+    "val_relation_macro_f1": 1.0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "items": 3756,
+  "teaching_items": 134,
+  "external_items": 3622,
+  "repeat_merge": {
+    "merged": true,
+    "added": 0,
+    "items": 3756,
+    "backup": "catalog.before_external_merge.json"
+  },
+  "catalog_sha256": "d5a3a8a73c9e3a23b6a7fcea292b7ca2c802da4c463fe05f234793210d94e68b",
+  "backup_sha256": "a3504045088e93fbcd01265f9193e536bb1469463312811b21280ea07aebd2a7",
+  "backup_matches_git_original": true,
+  "repeat_merge_byte_identical": true
+}

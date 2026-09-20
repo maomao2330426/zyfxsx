@@ -1,0 +1,35 @@
+F..........                                                              [100%]
+================================== FAILURES ===================================
+______________ test_group_split_has_no_item_or_sentence_leakage _______________
+
+    def test_group_split_has_no_item_or_sentence_leakage():
+        data=[read_jsonl(DATA/'processed'/f'{s}.jsonl') for s in ['train','val','test']]
+        for a,b in [(0,1),(0,2),(1,2)]:
+            assert not set(s['group'] for s in data[a]) & set(s['group'] for s in data[b])
+            assert not set(s['text'] for s in data[a]) & set(s['text'] for s in data[b])
+        for records in data:
+>           for record in records:validate_sample(record)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_core.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+sample = {'entities': [{'end': 16, 'start': 13, 'text': '溶剂瓶', 'type': 'ITEM'}, {'end': 25, 'start': 21, 'text': '有害垃圾', 'type': 'CATEGORY'}], 'group': '溶剂瓶', 'head': 0, 'provenance': 'synthetic_template', ...}
+
+    def validate_sample(sample):
+        text = sample['text']
+        if not text or len(text) > MAX_LEN:
+            raise ValueError('句子为空或超过 128 字，请先切分')
+        occupied = set()
+        for ent in sample['entities']:
+            start, end = ent['start'], ent['end']
+>           assert 0 <= start < end <= len(text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           TypeError: 'int' object does not support the context manager protocol
+
+wastekg\common.py:73: TypeError
+- generated xml file: C:\Users\kokolonomask\Desktop\idea\zyfxsx\waste-knowledge-graph\reports\test_core_iteration.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_core.py::test_group_split_has_no_item_or_sentence_leakage
+1 failed, 10 passed in 0.39s
+
