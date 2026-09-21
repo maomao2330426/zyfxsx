@@ -87,15 +87,18 @@ def handler(app):
                 if not isinstance(payload,dict):raise ValueError()
                 text=payload.get('text','')
                 if not isinstance(text,str) or not 1<=len(text.strip())<=MAX_LEN:raise ValueError()
-                mode=payload.get('mode','neural')
+                mode=payload.get('mode','hybrid')
                 if mode=='baseline':
                     from .inference import baseline
                     return self.reply(200,baseline(text))
-                if mode!='neural':raise ValueError()
+                if mode not in ('neural','hybrid'):raise ValueError()
                 with app.model_lock:
                     if app.model is None:
                         from .inference import Extractor
                         app.model=Extractor(app.model_dir)
+                    if mode=='hybrid':
+                        from .inference import assisted_extract
+                        return self.reply(200,assisted_extract(app.model,text))
                     return self.reply(200,app.model.extract(text))
             except (ValueError,TypeError,json.JSONDecodeError):return self.reply(400,{'error':'请输入 1 至 128 字，并选择有效抽取模式'})
             except (ImportError,FileNotFoundError):return self.reply(503,{'error':'缺少 TensorFlow 或模型文件。请安装依赖并训练，或选择词典基线。'})

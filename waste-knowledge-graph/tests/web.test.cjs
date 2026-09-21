@@ -139,8 +139,11 @@ test('QA and data audit expose provenance and conflicts',async()=>{
     const document=dom.window.document;
     document.querySelector('#question').value='阿司匹林是什么垃圾？';
     document.querySelector('#qa-form').dispatchEvent(new dom.window.Event('submit',{cancelable:true}));
-    await waitFor(()=>document.querySelector('#qa-result').textContent.includes('不自动补造'));
+    await waitFor(()=>document.querySelector('#qa-result').textContent.includes('外部数据集标注'));
     assert.match(document.querySelector('#qa-result').textContent,/外部数据集标注/);
+    assert.match(document.querySelector('#qa-result').textContent,/未逐条人工核验/);
+    const source=await (await fetch(base+'/api/search?'+new URLSearchParams({q:'阿司匹林'}))).json();
+    assert.ok(document.querySelector('#qa-result').textContent.includes(source.items[0].method));
     assert.match(document.querySelector('#qa-result a').href,/^https:/);
     await waitFor(()=>document.querySelector('.dataset-audit'));
     assert.match(document.querySelector('.dataset-audit').textContent,/竹签/);

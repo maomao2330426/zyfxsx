@@ -9,6 +9,14 @@ from wastekg.server import App,handler
 from wastekg.common import model_signature,write_json
 
 
+
+
+
+
+
+
+
+
 @pytest.fixture()
 def base():
     server=ThreadingHTTPServer(('127.0.0.1',0),handler(App()))

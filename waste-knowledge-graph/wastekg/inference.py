@@ -56,32 +56,13 @@ class Extractor:
 
 
 def baseline(text):
-    if not text.strip() or len(text)>MAX_LEN:
-        raise ValueError('请输入 1 至 128 字的单句')
-    rows=load_catalog()
-    terms={r['name']:'ITEM' for r in rows}
-    terms.update({c:'CATEGORY' for c in CATEGORIES})
-    terms.update({r['method']:'METHOD' for r in rows if r.get('method')})
-    occupied=set();entities=[]
-    for term,kind in sorted(terms.items(),key=lambda t:-len(t[0])):
-        for match in re.finditer(re.escape(term),text):
-            if not occupied.intersection(range(match.start(),match.end())):
-                entities.append({'start':match.start(),'end':match.end(),'type':kind,'text':term})
-                occupied.update(range(match.start(),match.end()))
-    entities.sort(key=lambda e:e['start'])
-    triples=[]
-    if not any(c in text for c in ['不是','不要','不属于','是否','吗','？','?','假如','假设','未说明']):
-        for h in entities:
-            for t in entities:
-                if h['type']=='ITEM' and t['type'] in {'CATEGORY','METHOD'}:
-                    # 基线只处理一个物品和一个目标的明确陈述，拒绝多实体交叉配对。
-                    if sum(e['type']=='ITEM' for e in entities)!=1 or sum(e['type']!='ITEM' for e in entities)!=1:
-                        continue
-                    if t['type']=='CATEGORY' and not any(w in text for w in ['属于','归入','类别是','包括','投入','进行分类']):
-                        continue
-                    triples.append({'head':h['text'],'relation':'BELONGS_TO' if t['type']=='CATEGORY' else 'DISPOSE_WITH',
-                                    'tail':t['text'],'confidence':None,'review_status':'pending','evidence':text})
-    return {'mode':'dictionary_baseline','entities':entities,'triples':triples,'note':'词典与规则基线，不是神经网络预测。'}
+    from .sentence_rules import extract_explicit
+    return extract_explicit(text)
+
+
+def assisted_extract(model,text):
+    from .sentence_rules import combine
+    return combine(text,model.extract(text))
 
 
 def main():
