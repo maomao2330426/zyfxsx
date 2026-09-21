@@ -6,7 +6,7 @@
   "catalog_items": 3755,
   "splits": {
     "train": {
-      "sentences": 15938,
+      "sentences": 21008,
       "items": [
         "1号电池(无汞)",
         "3.5英寸软盘",
@@ -2636,13 +2636,13 @@
         "龙虾"
       ],
       "relations": {
+        "DISPOSE_WITH": 5252,
         "BELONGS_TO": 7878,
-        "NO_RELATION": 7878,
-        "DISPOSE_WITH": 182
+        "NO_RELATION": 7878
       }
     },
     "val": {
-      "sentences": 3416,
+      "sentences": 4496,
       "items": [
         "5号电池(无汞)",
         "A4纸包装袋",
@@ -3208,13 +3208,13 @@
         "龙虾片"
       ],
       "relations": {
-        "BELONGS_TO": 1686,
         "NO_RELATION": 1686,
-        "DISPOSE_WITH": 44
+        "BELONGS_TO": 1686,
+        "DISPOSE_WITH": 1124
       }
     },
     "test": {
-      "sentences": 3442,
+      "sentences": 4536,
       "items": [
         "CD塑料盒",
         "KFC食物包装",
@@ -3785,9 +3785,9 @@
         "齿轮"
       ],
       "relations": {
-        "BELONGS_TO": 1701,
+        "DISPOSE_WITH": 1134,
         "NO_RELATION": 1701,
-        "DISPOSE_WITH": 40
+        "BELONGS_TO": 1701
       }
     }
   }

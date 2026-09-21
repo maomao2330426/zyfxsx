@@ -57,7 +57,7 @@ def handler(app):
                 if url.path=='/api/graph':return self.reply(200,app.kb.subgraph(arg('q'),arg('category'),int(arg('limit','24')),arg('scope','all'),int(arg('offset')) if 'offset' in query else None))
                 if url.path=='/api/qa':return self.reply(200,answer(app.kb,arg('q')))
                 if url.path=='/api/dataset':
-                    audit_path=DATA/'imported'/'audit.json'
+                    audit_path=DATA/'old'/'imported'/'audit.json'
                     audit=read_json(audit_path) if audit_path.exists() else {}
                     return self.reply(200,{'available':bool(audit),'summary':audit.get('summary'),
                                           'conflicts':audit.get('conflicts',[])[:20]})

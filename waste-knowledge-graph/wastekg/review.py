@@ -41,8 +41,8 @@ if __name__=='__main__':
     approved=approve(read_jsonl(args.candidates),read_jsonl(args.decisions))
     write_jsonl(DATA/'approved.jsonl',approved)
     if args.merge:
-        rows=read_json(DATA/'catalog.json')
+        rows=read_json(DATA/'old'/'catalog.json')
         updated=merge_catalog(rows,approved)
         write_json(DATA/'catalog.before_review.json',rows)
-        write_json(DATA/'catalog.json',updated)
+        write_json(DATA/'old'/'catalog.json',updated)
     print(f'批准 {len(approved)} 条；请重新构图并重启服务。')

@@ -32,7 +32,7 @@ def test_graph_is_deterministic_and_referentially_complete():
     assert all(e['source'] in ids and e['target'] in ids and e['source_url'] for e in g['edges'])
 
 
-@pytest.mark.parametrize('query,name,category', [('快递纸箱','纸箱','可回收物'),('香蕉皮','香蕉皮','湿垃圾'),('水银温度计','含汞温度计','有害垃圾'),('用过的纸巾','用过的纸巾','干垃圾')])
+@pytest.mark.parametrize('query,name,category', [('快递纸箱','纸箱','可回收物'),('香蕉皮','香蕉皮','湿垃圾'),('水银温度计','含汞温度计','有害垃圾'),('一次性口罩','一次性口罩','干垃圾')])
 def test_alias_and_category_query(query,name,category):
     result=KnowledgeBase().search(query)
     assert result['items'][0]['name']==name

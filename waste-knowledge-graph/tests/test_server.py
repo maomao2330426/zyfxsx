@@ -52,7 +52,7 @@ def test_external_catalog_qa_and_audit_routes(base):
         assert json.load(response)['status']=='reference'
     with urlopen(base+'/api/dataset') as response:
         audit=json.load(response)
-    assert audit['summary']['formats_match'] is True
+    assert audit['summary']['input_file']=='garbage_cleaned_merged.jsonl'
     assert audit['conflicts'][0]['name']=='竹签'
 
 

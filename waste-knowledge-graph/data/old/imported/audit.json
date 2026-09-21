@@ -29,19 +29,19 @@
     "sources": [
       "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json"
     ],
-    "input_file": "garbage_cleaned.jsonl",
-    "input_sha256": "1a9077c5be6fed422679f0dcd9eabfe414d9c2550e7535bcafe8d690e95ddd07",
-    "compared_file": "garbage_cleaned.csv",
-    "formats_match": true,
+    "input_file": "garbage_cleaned_merged.jsonl",
+    "input_sha256": "cdcd5257aab25f77372ea69b48b82ac78c1157e143c3082cc6725b61c4cae4b6",
+    "compared_file": null,
+    "formats_match": null,
     "active_catalog_items": 3756,
     "training_sentences": {
-      "train": 15938,
-      "val": 3416,
-      "test": 3442
+      "train": 21008,
+      "val": 4496,
+      "test": 4536
     },
     "main_catalog_merge": {
       "merged": true,
-      "added": 3622,
+      "added": 0,
       "items": 3756,
       "backup": "catalog.before_external_merge.json"
     }
@@ -58,7 +58,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3115
+          "source_record": 3115,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ],
       "reason": "同名物品分类冲突，未覆盖目录，未进入训练集"
@@ -76,7 +77,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2324
+          "source_record": 2324,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -90,7 +92,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2332
+          "source_record": 2332,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -104,7 +107,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 428
+          "source_record": 428,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -118,7 +122,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 264
+          "source_record": 264,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -132,7 +137,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3048
+          "source_record": 3048,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -146,7 +152,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1502
+          "source_record": 1502,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -160,7 +167,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 163
+          "source_record": 163,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -174,7 +182,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2398
+          "source_record": 2398,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -188,7 +197,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 507
+          "source_record": 507,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         },
         {
           "name": "含汞温度计",
@@ -197,7 +207,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3657
+          "source_record": 3657,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -211,7 +222,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 508
+          "source_record": 508,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -225,7 +237,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1909
+          "source_record": 1909,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -239,7 +252,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1804
+          "source_record": 1804,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -253,7 +267,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2088
+          "source_record": 2088,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -267,7 +282,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3134
+          "source_record": 3134,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -281,7 +297,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3133
+          "source_record": 3133,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -295,7 +312,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3183
+          "source_record": 3183,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -309,7 +327,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2375
+          "source_record": 2375,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -323,7 +342,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1596
+          "source_record": 1596,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -337,7 +357,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 205
+          "source_record": 205,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -351,7 +372,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 138
+          "source_record": 138,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -365,7 +387,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1732
+          "source_record": 1732,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -379,7 +402,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1130
+          "source_record": 1130,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -393,7 +417,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1145
+          "source_record": 1145,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -407,7 +432,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3622
+          "source_record": 3622,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -421,7 +447,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 728
+          "source_record": 728,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -435,7 +462,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3600
+          "source_record": 3600,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -449,7 +477,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3626
+          "source_record": 3626,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -463,7 +492,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3131
+          "source_record": 3131,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -477,7 +507,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 60
+          "source_record": 60,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -491,7 +522,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 531
+          "source_record": 531,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -505,7 +537,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 765
+          "source_record": 765,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -519,7 +552,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3546
+          "source_record": 3546,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -533,7 +567,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1656
+          "source_record": 1656,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -547,7 +582,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1574
+          "source_record": 1574,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -561,7 +597,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1718
+          "source_record": 1718,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -575,7 +612,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 803
+          "source_record": 803,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -589,7 +627,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1185
+          "source_record": 1185,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -603,7 +642,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1161
+          "source_record": 1161,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -617,7 +657,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1890
+          "source_record": 1890,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -631,7 +672,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3008
+          "source_record": 3008,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -645,7 +687,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2578
+          "source_record": 2578,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -659,7 +702,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 947
+          "source_record": 947,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -673,7 +717,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3607
+          "source_record": 3607,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -687,7 +732,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3178
+          "source_record": 3178,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -701,7 +747,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3180
+          "source_record": 3180,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -715,7 +762,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 740
+          "source_record": 740,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -729,7 +777,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 325
+          "source_record": 325,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -743,7 +792,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2323
+          "source_record": 2323,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -757,7 +807,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2074
+          "source_record": 2074,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -771,7 +822,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2593
+          "source_record": 2593,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -785,7 +837,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2186
+          "source_record": 2186,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -799,7 +852,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1243
+          "source_record": 1243,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -813,7 +867,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2244
+          "source_record": 2244,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -827,7 +882,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 119
+          "source_record": 119,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -841,7 +897,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3069
+          "source_record": 3069,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -855,7 +912,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3478
+          "source_record": 3478,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -869,7 +927,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 819
+          "source_record": 819,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -883,7 +942,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1881
+          "source_record": 1881,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -897,7 +957,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3200
+          "source_record": 3200,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         },
         {
           "name": "纸箱",
@@ -906,7 +967,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3404
+          "source_record": 3404,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -920,7 +982,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 900
+          "source_record": 900,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -934,7 +997,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2217
+          "source_record": 2217,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -948,7 +1012,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2376
+          "source_record": 2376,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -962,7 +1027,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1875
+          "source_record": 1875,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -976,7 +1042,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1892
+          "source_record": 1892,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -990,7 +1057,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1916
+          "source_record": 1916,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1004,7 +1072,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1646
+          "source_record": 1646,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1018,7 +1087,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 497
+          "source_record": 497,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1032,7 +1102,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1139
+          "source_record": 1139,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1046,7 +1117,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1533
+          "source_record": 1533,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1060,7 +1132,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 305
+          "source_record": 305,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1074,7 +1147,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1893
+          "source_record": 1893,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1088,7 +1162,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1020
+          "source_record": 1020,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -1102,7 +1177,8 @@
           "original_category": "有害垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3611
+          "source_record": 3611,
+          "method": "应投放至红色有害垃圾收集容器,由专业单位密封运输并无害化处置,避免污染土壤和水源。"
         }
       ]
     },
@@ -1116,7 +1192,8 @@
           "original_category": "可回收物",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 3381
+          "source_record": 3381,
+          "method": "清洗干净后压扁或折叠,投放至蓝色可回收物收集箱,进入再生资源回收体系循环利用。"
         }
       ]
     },
@@ -1130,7 +1207,8 @@
           "original_category": "其他垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1158
+          "source_record": 1158,
+          "method": "投放至灰色其他垃圾桶,经焚烧发电或卫生填埋处理。"
         }
       ]
     },
@@ -1144,7 +1222,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1013
+          "source_record": 1013,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1158,7 +1237,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1422
+          "source_record": 1422,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1172,7 +1252,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 114
+          "source_record": 114,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1186,7 +1267,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 980
+          "source_record": 980,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1200,7 +1282,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1891
+          "source_record": 1891,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1214,7 +1297,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1723
+          "source_record": 1723,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1228,7 +1312,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1944
+          "source_record": 1944,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1242,7 +1327,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1942
+          "source_record": 1942,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1256,7 +1342,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2167
+          "source_record": 2167,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1270,7 +1357,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2135
+          "source_record": 2135,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1284,7 +1372,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 1607
+          "source_record": 1607,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     },
@@ -1298,7 +1387,8 @@
           "original_category": "厨余垃圾",
           "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json",
           "source": "garbage-classification-data",
-          "source_record": 2144
+          "source_record": 2144,
+          "method": "沥干水分后投放至绿色厨余垃圾桶,用于堆肥或厌氧发酵生产沼气。"
         }
       ]
     }

@@ -1,9 +1,10 @@
-"""保留教学目录与外部标签的来源差异；支持离线查询及 Neo4j 导入。"""
+"""从唯一合并数据源构建图谱；支持离线查询及 Neo4j 导入。"""
 import argparse
 import os
 import unicodedata
 from collections import Counter
 from .common import *
+from .dataset import normalize
 
 
 def build_graph(catalog):
@@ -24,18 +25,31 @@ def build_graph(catalog):
                         'source_url':metadata['source_url'],'evidence':row['evidence'] if kind=='CATEGORY' else metadata.get('method_evidence',f"{row['name']}的示例投放要求：{row['method']}。"),
                         'region':row['region'],'provenance':metadata['provenance'],'review_status':metadata['review_status']}
     return {'nodes':list(nodes.values()),'edges':list(edges.values()),'region':'上海四分类名称映射',
-            'data_note':'教学目录与外部来源标签分别标记；外部数据地区未核验，不自动构造投放方法。'}
+            'data_note':'教学目录与外部来源标签分别标记；外部数据地区未核验，投放方法来自合并数据源、未经逐条核验。'}
 
 
 def load_catalog(include_external=True):
-    rows=read_json(DATA/'catalog.json')
+    """从唯一合并数据源 `data/garbage_cleaned_merged.jsonl` 读取目录，做别名与类别归一化。"""
     if not include_external:
-        return [row for row in rows if row.get('provenance')!='external_dataset']
-    path=DATA/'imported'/'catalog.json'
-    if include_external and path.exists():
-        existing={row['name'] for row in rows}
-        rows=rows+[row for row in read_json(path) if row['name'] not in existing]
-    return rows
+        return []
+    aliases=read_json(DATA/'aliases.json')
+    mapping={**{kind:kind for kind in CATEGORIES},**aliases}
+    combined={}
+    for record in read_jsonl(DATA/'garbage_cleaned_merged.jsonl'):
+        name=normalize(record.get('name',''))
+        category=normalize(record.get('category',''))
+        name=aliases.get(name,name)
+        category=mapping.get(category,category)
+        if not name or category not in CATEGORIES or name in combined:
+            continue
+        combined[name]={'name':name,'category':category,
+            'method':record.get('method') or None,
+            'source_url':record.get('url',''),
+            'source':normalize(record.get('source','外部数据集')),
+            'note':'外部数据集的分类标签与投放方法，未逐条人工核验；未提供地区与原始描述。',
+            'region':'来源地区未核验','provenance':'external_dataset','review_status':'source_labeled',
+            'confidence':None,'evidence':f"来源数据：{record.get('name',name)} → {category}。类别名称映射不代表地区规则已核验。"}
+    return list(combined.values())
 
 
 class KnowledgeBase:

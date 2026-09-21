@@ -6,7 +6,7 @@
 
 ## 2026年9月15日数据集迭代
 
-已接入用户提供的 `garbage_cleaned.csv` 与 `garbage_cleaned.jsonl`。两者均为3712条、内容一致的同一份数据，不能相加为7424条。归一化后新增3622个物品，加上原134条目录，共3756个物品、3767个节点、3890条关系。
+已接入用户提供的外部分类表 `garbage_cleaned.csv`、`garbage_cleaned.jsonl` 与 `garbage_cleaned_with_method.jsonl`，三者均为3712条、名称与类别一致的同一份数据（带方法的那份按类别补充投放方法），已合并为 `data/garbage_cleaned_merged.jsonl`。归一化后共3710个物品、3718个节点、7420条关系（每条物品各有分类关系和投放关系）。系统运行时只读取 `data/garbage_cleaned_merged.jsonl` 这一份数据源，不再读取 `catalog.json`、`imported/`；原134条教学目录不再进入运行时查询与图谱。
 
 - “厨余垃圾 → 湿垃圾”“其他垃圾 → 干垃圾”仅做名称映射；外部数据没有地区信息，不能视为已满足上海实际规则。
 - 外部标签标记为 `source_labeled`，逐条保留原名称、类别、来源行号和链接；不标记成人工审核通过。
@@ -29,7 +29,7 @@
 ### 重现数据接入
 
 ```powershell
-python -m wastekg.dataset garbage_cleaned.jsonl --compare garbage_cleaned.csv --merge-catalog
+python -m wastekg.dataset data/garbage_cleaned_merged.jsonl --merge-catalog
 python -m wastekg.graph
 ```
 

@@ -49,7 +49,8 @@ def audit(records,existing,aliases):
                 raise ValueError('缺少可追溯的 HTTP 来源')
             grouped[canonical].append({'name':canonical,'original_name':name,'category':category,
                 'original_category':record['category'],'source_url':source_url,
-                'source':normalize(record.get('source','外部数据集')),'source_record':number})
+                'source':normalize(record.get('source','外部数据集')),'source_record':number,
+                'method':normalize(record.get('method',''))})
         except (ValueError,TypeError) as error:
             rejected.append({'record':number,'reason':str(error),'raw':record})
     old={normalize(row['name']):row for row in existing}
@@ -64,7 +65,8 @@ def audit(records,existing,aliases):
             overlaps.append({'name':name,'records':group})
             continue
         row=group[0]
-        accepted.append({**row,'method':None,'note':'外部数据集的分类标签，未逐条人工核验；未提供投放方法、地区与原始描述。',
+        accepted.append({**row,'method':row.get('method') or None,
+            'note':'外部数据集的分类标签与投放方法，未逐条人工核验；未提供地区与原始描述。',
             'region':'来源地区未核验','provenance':'external_dataset','review_status':'source_labeled',
             'confidence':None,'evidence':f"来源数据第{row['source_record']}条：{row['original_name']} → {row['original_category']}。类别名称映射不代表地区规则已核验。",
             'source_records':[entry['source_record'] for entry in group]})
@@ -130,7 +132,7 @@ def training_data(rows,output,seed=42):
 
 
 def merge_main_catalog(additions,path=None):
-    path=Path(path or DATA/'catalog.json')
+    path=Path(path or DATA/'old'/'catalog.json')
     original=path.read_bytes()
     rows=json.loads(original.decode('utf-8-sig'))
     aliases=read_json(DATA/'aliases.json')
@@ -142,6 +144,8 @@ def merge_main_catalog(additions,path=None):
             raise ValueError('主目录存在类别冲突，未合并：'+name)
         if not previous:
             combined[name]=row
+        elif row.get('method') and not previous.get('method'):
+            combined[name]={**previous,'method':row['method'],'note':row.get('note',previous.get('note'))}
     merged=list(combined.values())
     backup=path.with_name(path.stem+'.before_external_merge.json')
     if merged==rows:
@@ -165,12 +169,12 @@ def ingest(source,compare=None,output=None,training_output=None,merge=False):
     records=read_records(source)
     if compare is not None and Counter(json.dumps(row,sort_keys=True,ensure_ascii=False) for row in records)!=Counter(json.dumps(row,sort_keys=True,ensure_ascii=False) for row in read_records(compare)):
         raise ValueError('CSV 与 JSONL 内容不一致，请先核对；未输出新目录')
-    existing=[row for row in read_json(DATA/'catalog.json') if row.get('provenance')!='external_dataset']
+    existing=[row for row in read_json(DATA/'old'/'catalog.json') if row.get('provenance')!='external_dataset']
     accepted,report=audit(records,existing,read_json(DATA/'aliases.json'))
     if not accepted:
         raise ValueError('没有可接入的新记录，请检查字段或冲突')
-    output=Path(output or DATA/'imported')
-    training_output=Path(training_output or DATA/'processed_external')
+    output=Path(output or DATA/'old'/'imported')
+    training_output=Path(training_output or DATA/'old'/'processed_external')
     conflicts={row['name'] for row in report['conflicts']}
     training_rows=[row for row in existing if normalize(row['name']) not in conflicts]+accepted
     manifest=training_data(training_rows,training_output)
@@ -194,8 +198,8 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('source',type=Path)
     parser.add_argument('--compare',type=Path)
-    parser.add_argument('--output',type=Path,default=DATA/'imported')
-    parser.add_argument('--training-output',type=Path,default=DATA/'processed_external')
+    parser.add_argument('--output',type=Path,default=DATA/'old'/'imported')
+    parser.add_argument('--training-output',type=Path,default=DATA/'old'/'processed_external')
     parser.add_argument('--merge-catalog',action='store_true',help='备份并合并到data/catalog.json，可重复执行而不重复入库')
     args=parser.parse_args()
     try:

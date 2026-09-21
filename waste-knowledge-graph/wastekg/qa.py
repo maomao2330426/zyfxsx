@@ -23,5 +23,5 @@ def answer(kb,question):
     edges=[edge for edge in kb.graph['edges'] if edge['source']==identity('ITEM',subject)]
     names={node['id']:node['name'] for node in kb.graph['nodes']}
     return {'status':'reference' if external else 'answered','items':[exact],
-            'answer':f"{prefix}：{subject} → {exact['category']}。"+(f"投放要求：{method}。" if method else '来源未提供投放方法，不自动补造。'),
+            'answer':f"{prefix}：{subject} → {exact['category']}。"+(f"投放要求：{method.rstrip('。')}。" if method else '来源未提供投放方法，不自动补造。'),
             'notice':exact['note'],'triples':[{**edge,'head':names[edge['source']],'tail':names[edge['target']]} for edge in edges]}

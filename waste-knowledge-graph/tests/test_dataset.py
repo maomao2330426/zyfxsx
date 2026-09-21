@@ -10,9 +10,10 @@ def record(name='测试物品',category='厨余垃圾',**fields):
     return {'name':name,'category':category,'url':'https://example.org/dataset','source':'test',**fields}
 
 
-def test_csv_and_jsonl_are_same_source_not_double_counted():
-    root=DATA.parent
-    assert read_records(root/'garbage_cleaned.csv')==read_records(root/'garbage_cleaned.jsonl')
+def test_merged_source_is_complete_and_has_methods():
+    records=read_records(DATA/'garbage_cleaned_merged.jsonl')
+    assert len(records)==3712
+    assert all(r.get('method') and r['method'].strip() for r in records)
 
 
 def test_normalization_deduplication_conflict_and_rejection():
@@ -39,18 +40,17 @@ def test_external_graph_does_not_invent_method_relationships():
 
 
 def test_ingestion_is_reproducible_and_preserves_source_files(tmp_path):
-    root=DATA.parent
-    source=root/'garbage_cleaned.jsonl';paired=root/'garbage_cleaned.csv'
-    before=(source.read_bytes(),paired.read_bytes(),(DATA/'catalog.json').read_bytes())
+    source=DATA/'garbage_cleaned_merged.jsonl'
+    before=(source.read_bytes(),(DATA/'old'/'catalog.json').read_bytes())
     outputs=tmp_path/'imported';training=tmp_path/'training'
-    summary=ingest(source,paired,outputs,training)
+    summary=ingest(source,None,outputs,training)
     first={path.name:path.read_bytes() for path in training.iterdir()}
-    assert summary['formats_match'] is True
+    assert summary['formats_match'] is None
     assert summary['accepted_items']==3622
     assert summary['conflict_items']==1
-    ingest(paired,source,outputs,training)
+    ingest(source,None,outputs,training)
     assert first=={path.name:path.read_bytes() for path in training.iterdir()}
-    assert before==(source.read_bytes(),paired.read_bytes(),(DATA/'catalog.json').read_bytes())
+    assert before==(source.read_bytes(),(DATA/'old'/'catalog.json').read_bytes())
     splits=[read_jsonl(training/f'{split}.jsonl') for split in ('train','val','test')]
     groups=[{row['group'] for row in samples} for samples in splits]
     assert not (groups[0]&groups[1] or groups[0]&groups[2] or groups[1]&groups[2])
@@ -107,7 +107,8 @@ def test_scope_and_evidence_qa_do_not_claim_external_labels_are_reviewed():
     assert all(row['provenance']!='external_dataset' for row in kb.search(scope='teaching')['items'])
     result=answer(kb,'阿司匹林是什么垃圾？')
     assert result['status']=='reference'
-    assert result['items'][0]['method'] is None
+    assert result['items'][0]['method']
+    assert result['items'][0]['review_status']=='source_labeled'
     assert result['triples'][0]['source_url']
     assert answer(kb,'快递纸箱怎么扔')['items'][0]['name']=='纸箱'
     assert answer(kb,'沾满油漆的纸箱怎么扔')['status'] in ('clarify','unknown')

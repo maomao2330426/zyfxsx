@@ -1,1 +1,0 @@
-{"name": "竹签", "existing_category": "干垃圾", "incoming": [{"name": "竹签", "original_name": "竹签", "category": "可回收物", "original_category": "可回收物", "source_url": "https://cdn.jsdelivr.net/npm/garbage-classification-data/garbage.json", "source": "garbage-classification-data", "source_record": 3115}], "reason": "同名物品分类冲突，未覆盖目录，未进入训练集"}
