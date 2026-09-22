@@ -31,9 +31,10 @@ def main():
     from .inference import Extractor,baseline
     from .train import evaluate,prf
     parser=argparse.ArgumentParser()
-    parser.add_argument('--model-dir',type=Path,default=ROOT/'models')
-    parser.add_argument('--output',type=Path,default=ROOT/'reports'/'challenge_metrics.json')
+    parser.add_argument('--model-dir',type=Path,default=DEFAULT_MODEL_DIR)
+    parser.add_argument('--output',type=Path,default=None)
     args=parser.parse_args()
+    if args.output is None:args.output=args.model_dir/'challenge_metrics.json'
     records=[example(*case,template='challenge') for case in CASES]
     for r in records:r['provenance']='authored_paraphrase_challenge'
     model=Extractor(args.model_dir);metrics=evaluate(model.ner,model.re,records,model.vocab)

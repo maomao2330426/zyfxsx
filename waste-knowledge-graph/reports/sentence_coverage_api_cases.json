@@ -1,0 +1,1063 @@
+[
+  {
+    "text": "香蕉皮属于湿垃圾,应该扔进垃圾桶里",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "扔进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": 0.9999642372131348,
+          "extraction_source": "neural_and_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾,应该扔进垃圾桶里",
+          "confidence_kind": "uncalibrated_relation_softmax"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "扔进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 17,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "扔进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾,应该扔进垃圾桶里"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "扔进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾,应该扔进垃圾桶里"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "扔进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 17,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "扔进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾,应该扔进垃圾桶里"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮属于湿垃圾，应该丢进垃圾桶里。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "丢进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": 0.9999803304672241,
+          "extraction_source": "neural_and_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾，应该丢进垃圾桶里。",
+          "confidence_kind": "uncalibrated_relation_softmax"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "丢进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 17,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "丢进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾，应该丢进垃圾桶里。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "丢进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾，应该丢进垃圾桶里。"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "丢进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 17,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "丢进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾，应该丢进垃圾桶里。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "沥干水分",
+          "type": "METHOD"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "装袋",
+          "type": "METHOD"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "丢进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "沥干水分",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 4,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "沥干水分",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "装袋",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 10,
+          "tail_end": 12,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "装袋",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "丢进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 15,
+          "tail_end": 21,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "丢进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "沥干水分",
+          "type": "METHOD"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "装袋",
+          "type": "METHOD"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "丢进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "沥干水分",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 4,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "沥干水分",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "装袋",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 10,
+          "tail_end": 12,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "装袋",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "丢进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 15,
+          "tail_end": 21,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "丢进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮先沥干水分，再装袋，最后丢进垃圾桶里。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "玻璃瓶应该用报纸包裹好再投放，然后送到回收点。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "玻璃瓶",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 14,
+          "text": "用报纸包裹好再投放",
+          "type": "METHOD"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "送到回收点",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "玻璃瓶",
+          "relation": "DISPOSE_WITH",
+          "tail": "用报纸包裹好再投放",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 14,
+          "canonical_head": "玻璃瓶",
+          "canonical_tail": "用报纸包裹好再投放",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "玻璃瓶应该用报纸包裹好再投放，然后送到回收点。"
+        },
+        {
+          "head": "玻璃瓶",
+          "relation": "DISPOSE_WITH",
+          "tail": "送到回收点",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 17,
+          "tail_end": 22,
+          "canonical_head": "玻璃瓶",
+          "canonical_tail": "送到回收点",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "玻璃瓶应该用报纸包裹好再投放，然后送到回收点。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "玻璃瓶",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 14,
+          "text": "用报纸包裹好再投放",
+          "type": "METHOD"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "送到回收点",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "玻璃瓶",
+          "relation": "DISPOSE_WITH",
+          "tail": "用报纸包裹好再投放",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 14,
+          "canonical_head": "玻璃瓶",
+          "canonical_tail": "用报纸包裹好再投放",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "玻璃瓶应该用报纸包裹好再投放，然后送到回收点。"
+        },
+        {
+          "head": "玻璃瓶",
+          "relation": "DISPOSE_WITH",
+          "tail": "送到回收点",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 17,
+          "tail_end": 22,
+          "canonical_head": "玻璃瓶",
+          "canonical_tail": "送到回收点",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "玻璃瓶应该用报纸包裹好再投放，然后送到回收点。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮和塑料袋分别属于湿垃圾和干垃圾。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "text": "塑料袋",
+          "type": "ITEM"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "干垃圾",
+          "type": "CATEGORY"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 14,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮和塑料袋分别属于湿垃圾和干垃圾。"
+        },
+        {
+          "head": "塑料袋",
+          "relation": "BELONGS_TO",
+          "tail": "干垃圾",
+          "head_start": 4,
+          "head_end": 7,
+          "tail_start": 15,
+          "tail_end": 18,
+          "canonical_head": "塑料袋",
+          "canonical_tail": "干垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮和塑料袋分别属于湿垃圾和干垃圾。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "text": "塑料袋",
+          "type": "ITEM"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "干垃圾",
+          "type": "CATEGORY"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 14,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮和塑料袋分别属于湿垃圾和干垃圾。"
+        },
+        {
+          "head": "塑料袋",
+          "relation": "BELONGS_TO",
+          "tail": "干垃圾",
+          "head_start": 4,
+          "head_end": 7,
+          "tail_start": 15,
+          "tail_end": 18,
+          "canonical_head": "塑料袋",
+          "canonical_tail": "干垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮和塑料袋分别属于湿垃圾和干垃圾。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮不是干垃圾，但它属于湿垃圾。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "干垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 13,
+          "tail_end": 16,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮不是干垃圾，但它属于湿垃圾。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "干垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 13,
+          "tail_end": 16,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮不是干垃圾，但它属于湿垃圾。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮应沥干水分而塑料袋应送到回收点。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "沥干水分",
+          "type": "METHOD"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "塑料袋",
+          "type": "ITEM"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "送到回收点",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "沥干水分",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 4,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "沥干水分",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮应沥干水分而塑料袋应送到回收点。"
+        },
+        {
+          "head": "塑料袋",
+          "relation": "DISPOSE_WITH",
+          "tail": "送到回收点",
+          "head_start": 9,
+          "head_end": 12,
+          "tail_start": 13,
+          "tail_end": 18,
+          "canonical_head": "塑料袋",
+          "canonical_tail": "送到回收点",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮应沥干水分而塑料袋应送到回收点。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "沥干水分",
+          "type": "METHOD"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "塑料袋",
+          "type": "ITEM"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "送到回收点",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "沥干水分",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 4,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "沥干水分",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮应沥干水分而塑料袋应送到回收点。"
+        },
+        {
+          "head": "塑料袋",
+          "relation": "DISPOSE_WITH",
+          "tail": "送到回收点",
+          "head_start": 9,
+          "head_end": 12,
+          "tail_start": 13,
+          "tail_end": 18,
+          "canonical_head": "塑料袋",
+          "canonical_tail": "送到回收点",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮应沥干水分而塑料袋应送到回收点。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮应该丢进垃圾桶里吗？",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "垃圾桶",
+          "type": "ITEM"
+        }
+      ],
+      "triples": [],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "垃圾桶",
+          "type": "ITEM"
+        }
+      ],
+      "triples": [],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮不得丢进垃圾桶里。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "垃圾桶",
+          "type": "ITEM"
+        }
+      ],
+      "triples": [],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "垃圾桶",
+          "type": "ITEM"
+        }
+      ],
+      "triples": [],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  },
+  {
+    "text": "香蕉皮属于湿垃圾并应该丢进垃圾桶里。",
+    "hybrid": {
+      "mode": "hybrid",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "丢进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": 0.9972448348999023,
+          "extraction_source": "neural_and_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾并应该丢进垃圾桶里。",
+          "confidence_kind": "uncalibrated_relation_softmax"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "丢进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 17,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "丢进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾并应该丢进垃圾桶里。"
+        }
+      ],
+      "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+      "model_used": true,
+      "pipeline_version": "clause_guard_v2"
+    },
+    "baseline": {
+      "mode": "dictionary_baseline",
+      "entities": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "香蕉皮",
+          "type": "ITEM"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "湿垃圾",
+          "type": "CATEGORY"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "丢进垃圾桶里",
+          "type": "METHOD"
+        }
+      ],
+      "triples": [
+        {
+          "head": "香蕉皮",
+          "relation": "BELONGS_TO",
+          "tail": "湿垃圾",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 5,
+          "tail_end": 8,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "湿垃圾",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾并应该丢进垃圾桶里。"
+        },
+        {
+          "head": "香蕉皮",
+          "relation": "DISPOSE_WITH",
+          "tail": "丢进垃圾桶里",
+          "head_start": 0,
+          "head_end": 3,
+          "tail_start": 11,
+          "tail_end": 17,
+          "canonical_head": "香蕉皮",
+          "canonical_tail": "丢进垃圾桶里",
+          "confidence": null,
+          "extraction_source": "sentence_rule",
+          "review_status": "pending",
+          "evidence": "香蕉皮属于湿垃圾并应该丢进垃圾桶里。"
+        }
+      ],
+      "note": "词典与句式规则抽取，不是神经网络预测；按原文提取陈述，未核对分类事实，候选需人工审核。"
+    }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "model_dir": "models",
+  "source": "models_manual",
+  "backup": "models_backup_before_manual_20260922_153741",
+  "epochs": 12,
+  "best_epoch": 10,
+  "model_signature": "f4ac489ad08ee99ba7da5bb21cbb86f613a77287166b1477afeabd78ea52c9ac",
+  "api_verified": true,
+  "example": {
+    "mode": "hybrid",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "香蕉皮",
+        "type": "ITEM"
+      },
+      {
+        "start": 5,
+        "end": 8,
+        "text": "湿垃圾",
+        "type": "CATEGORY"
+      },
+      {
+        "start": 11,
+        "end": 17,
+        "text": "扔进垃圾桶里",
+        "type": "METHOD"
+      }
+    ],
+    "triples": [
+      {
+        "head": "香蕉皮",
+        "relation": "BELONGS_TO",
+        "tail": "湿垃圾",
+        "head_start": 0,
+        "head_end": 3,
+        "tail_start": 5,
+        "tail_end": 8,
+        "canonical_head": "香蕉皮",
+        "canonical_tail": "湿垃圾",
+        "confidence": 0.9999998807907104,
+        "extraction_source": "neural_and_rule",
+        "review_status": "pending",
+        "evidence": "香蕉皮属于湿垃圾，应该扔进垃圾桶里",
+        "confidence_kind": "uncalibrated_relation_softmax"
+      },
+      {
+        "head": "香蕉皮",
+        "relation": "DISPOSE_WITH",
+        "tail": "扔进垃圾桶里",
+        "head_start": 0,
+        "head_end": 3,
+        "tail_start": 11,
+        "tail_end": 17,
+        "canonical_head": "香蕉皮",
+        "canonical_tail": "扔进垃圾桶里",
+        "confidence": 0.9999992847442627,
+        "extraction_source": "neural_and_rule",
+        "review_status": "pending",
+        "evidence": "香蕉皮属于湿垃圾，应该扔进垃圾桶里",
+        "confidence_kind": "uncalibrated_relation_softmax"
+      }
+    ],
+    "note": "BiLSTM-CRF + BiGRU-Attention 与词典边界、分句规则联合抽取。规则补全不显示模型分数；原始神经模型可单独对照。抽取只反映原文陈述，候选需人工审核。",
+    "model_used": true,
+    "pipeline_version": "clause_guard_v2"
+  }
+}

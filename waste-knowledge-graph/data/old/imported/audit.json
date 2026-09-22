@@ -38,12 +38,6 @@
       "train": 21008,
       "val": 4496,
       "test": 4536
-    },
-    "main_catalog_merge": {
-      "merged": true,
-      "added": 0,
-      "items": 3756,
-      "backup": "catalog.before_external_merge.json"
     }
   },
   "conflicts": [

@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
+DEFAULT_MODEL_DIR = ROOT / 'models_manual'
 CATEGORIES = ['可回收物', '干垃圾', '湿垃圾', '有害垃圾']
 TAGS = ['O', 'B-ITEM', 'I-ITEM', 'B-CATEGORY', 'I-CATEGORY', 'B-METHOD', 'I-METHOD']
 RELATIONS = ['NO_RELATION', 'BELONGS_TO', 'DISPOSE_WITH']

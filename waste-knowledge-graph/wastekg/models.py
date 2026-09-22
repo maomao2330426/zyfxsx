@@ -122,6 +122,6 @@ def encode(samples, vocab):
             tail = s['entities'][s.get('tail',1)]
             # 实体内位置为 0，外部是距实体边界的有符号距离。
             def positions(ent):
-                return [int(np.clip(j-ent['start'] if j<ent['start'] else (j-ent['end']+1 if j>=ent['end'] else 0), -64,64))+66 for j in range(n)]
+                return [int(max(-64,min(64,j-ent['start'] if j<ent['start'] else (j-ent['end']+1 if j>=ent['end'] else 0))))+66 for j in range(n)]
             hp[i,:n], tp[i,:n] = positions(head), positions(tail)
     return x,y,np.array(lengths,np.int32),hp,tp

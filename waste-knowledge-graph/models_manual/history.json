@@ -1,0 +1,79 @@
+[
+  {
+    "epoch": 1,
+    "ner_loss": 0.9796420003842102,
+    "relation_loss": 0.0422262411062711,
+    "val_ner_f1": 0.9955717761557178,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 2,
+    "ner_loss": 0.009568324656581527,
+    "relation_loss": 0.00013809835575996792,
+    "val_ner_f1": 0.9970807181433368,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 3,
+    "ner_loss": 0.0030089906582954143,
+    "relation_loss": 3.197839707272681e-05,
+    "val_ner_f1": 0.9973726463290031,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 4,
+    "ner_loss": 0.0013422284230820082,
+    "relation_loss": 1.671278989837692e-05,
+    "val_ner_f1": 0.9978591933051136,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 5,
+    "ner_loss": 0.0008096953447819217,
+    "relation_loss": 1.1077146226536284e-05,
+    "val_ner_f1": 0.9973726463290031,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 6,
+    "ner_loss": 0.0005438234024286124,
+    "relation_loss": 7.32108509423137e-06,
+    "val_ner_f1": 0.9968862508514158,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 7,
+    "ner_loss": 0.0003131503920107452,
+    "relation_loss": 4.829630012373558e-06,
+    "val_ner_f1": 0.9974944659320344,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 8,
+    "ner_loss": 0.00024870000128880183,
+    "relation_loss": 3.4457034700424406e-06,
+    "val_ner_f1": 0.9970322078427557,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 9,
+    "ner_loss": 0.00016504115399053017,
+    "relation_loss": 2.625059043050518e-06,
+    "val_ner_f1": 0.9975187311472219,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 10,
+    "ner_loss": 0.00018327861228530044,
+    "relation_loss": 2.1737842667774337e-06,
+    "val_ner_f1": 0.9979317225101589,
+    "val_relation_macro_f1": 1.0
+  },
+  {
+    "epoch": 11,
+    "ner_loss": 0.012509509211463665,
+    "relation_loss": 1.4473367031406381e-06,
+    "val_ner_f1": 0.9944805115860628,
+    "val_relation_macro_f1": 1.0
+  }
+]

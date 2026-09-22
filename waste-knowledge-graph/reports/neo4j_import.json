@@ -1,6 +1,0 @@
-{
-  "nodes": 145,
-  "edges": 268,
-  "uri": "bolt://localhost:7687",
-  "database": "neo4j"
-}

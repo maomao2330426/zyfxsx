@@ -11,22 +11,45 @@ from .qa import answer
 
 class App:
     def __init__(self,model_dir=None):
-        self.model_dir=Path(model_dir or ROOT/'models')
-        self.kb=KnowledgeBase();self.model=None;self.model_lock=threading.Lock()
+        self.model_dir=Path(model_dir or DEFAULT_MODEL_DIR)
+        self.kb=KnowledgeBase();self.model=None;self.model_lock=threading.Lock();self.loaded_signature=None
+
+    def training_run(self):
+        path=self.model_dir/'training_run.json'
+        return read_json(path) if path.exists() else None
+
+    def metrics_snapshot(self):
+        run=self.training_run()
+        metrics=self.evaluation('metrics.json')
+        history_path=self.model_dir/'history.json'
+        history=read_json(history_path) if history_path.exists() and (run or metrics) else []
+        if run: history=history[:run.get('completed_epochs',0)]
+        snapshot={'available':metrics is not None,'metrics':metrics,'model_name':self.model_dir.name,
+                  'history':history,'training_run':run,
+                  'challenge':self.evaluation('challenge_metrics.json'),
+                  'web':self.evaluation('web_metrics.json')}
+        # Do not return a mixture if a new run starts during this request.
+        if run != self.training_run():
+            return {'available':False,'metrics':None,'history':[], 'training_run':self.training_run(),
+                    'model_name':self.model_dir.name,'challenge':None,'web':None}
+        return snapshot
 
     def evaluation(self,name):
+        run=self.training_run()
+        if run and run.get('status')!='completed':return None
         path=self.model_dir/name
         if not path.exists():
-            if self.model_dir.resolve()!=(ROOT/'models').resolve():return None
+            if self.model_dir.resolve()!=(DEFAULT_MODEL_DIR).resolve():return None
             path=ROOT/'reports'/name
         if not path.exists():return None
         report=read_json(path)
+        if name=='metrics.json' and run and report.get('training_run',{}).get('run_id')!=run['run_id']:return None
         signature=report.get('model_signature')
         if signature:
             return report if signature==model_signature(self.model_dir) else None
         metrics_path=self.model_dir/'metrics.json'
         legacy=metrics_path.exists() and not read_json(metrics_path).get('model_signature')
-        return report if legacy and self.model_dir.resolve()==(ROOT/'models').resolve() else None
+        return report if legacy and self.model_dir.resolve()==(DEFAULT_MODEL_DIR).resolve() else None
 
     def stats(self):
         from collections import Counter
@@ -62,12 +85,7 @@ def handler(app):
                     return self.reply(200,{'available':bool(audit),'summary':audit.get('summary'),
                                           'conflicts':audit.get('conflicts',[])[:20]})
                 if url.path=='/api/metrics':
-                    metrics=app.evaluation('metrics.json')
-                    return self.reply(200,{'available':metrics is not None,'metrics':metrics,
-                                           'model_name':app.model_dir.name,
-                                           'history':read_json(app.model_dir/'history.json') if metrics is not None and (app.model_dir/'history.json').exists() else [],
-                                           'challenge':app.evaluation('challenge_metrics.json'),
-                                           'web':app.evaluation('web_metrics.json')})
+                    return self.reply(200,app.metrics_snapshot())
                 allowed={'/':'index.html','/app.js':'app.js','/graph-layout.js':'graph-layout.js','/style.css':'style.css'}
                 if url.path not in allowed:return self.reply(404,{'error':'未找到页面'})
                 path=ROOT/'web'/allowed[url.path]
@@ -93,9 +111,13 @@ def handler(app):
                     return self.reply(200,baseline(text))
                 if mode not in ('neural','hybrid'):raise ValueError()
                 with app.model_lock:
-                    if app.model is None:
+                    run=app.training_run()
+                    if run and run.get('status')!='completed':return self.reply(503,{'error':'当前模型正在训练或上次训练未完成，请完成训练后重试，或选择词典基线。'})
+                    signature=model_signature(app.model_dir)
+                    if app.model is None or app.loaded_signature!=signature:
                         from .inference import Extractor
                         app.model=Extractor(app.model_dir)
+                        app.loaded_signature=signature
                     if mode=='hybrid':
                         from .inference import assisted_extract
                         return self.reply(200,assisted_extract(app.model,text))
@@ -111,7 +133,7 @@ def handler(app):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=8765)
-    p.add_argument('--model-dir',type=Path,default=ROOT/'models');args=p.parse_args()
+    p.add_argument('--model-dir',type=Path,default=DEFAULT_MODEL_DIR);args=p.parse_args()
     server=ThreadingHTTPServer(('127.0.0.1',args.port),handler(App(args.model_dir)))
     print(f'打开 http://127.0.0.1:{args.port} ；Ctrl+C 停止',flush=True)
     try:server.serve_forever()

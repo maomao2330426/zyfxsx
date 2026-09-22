@@ -15,7 +15,7 @@ class Extractor:
                 tf.config.threading.set_inter_op_parallelism_threads(2)
         except RuntimeError:
             pass  # 已初始化的调用方自行管理 TensorFlow 线程池。
-        path=Path(model_dir or ROOT/'models')
+        path=Path(model_dir or DEFAULT_MODEL_DIR)
         self.vocab=read_json(path/'vocab.json')
         self.ner=BiLSTMCRF(len(self.vocab));self.re=BiGRUAttention(len(self.vocab))
         dummy=np.ones((1,4),np.int32)
@@ -68,7 +68,7 @@ def assisted_extract(model,text):
 def main():
     p=argparse.ArgumentParser();p.add_argument('text',nargs='?');p.add_argument('--baseline',action='store_true')
     p.add_argument('--input',type=Path);p.add_argument('--output',type=Path,default=DATA/'candidates.jsonl')
-    p.add_argument('--model-dir',type=Path,default=ROOT/'models')
+    p.add_argument('--model-dir',type=Path,default=DEFAULT_MODEL_DIR)
     args=p.parse_args();model=None if args.baseline else Extractor(args.model_dir)
     if args.input:
         candidates=[]

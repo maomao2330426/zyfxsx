@@ -1,0 +1,45 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const {JSDOM}=require('jsdom');
+const source=fs.readFileSync(path.join(__dirname,'../web/app.js'),'utf8');
+test('chart shows every epoch, original scores and replaces previous run',()=>{
+  const dom=new JSDOM('<div id="chart"></div>',{runScripts:'outside-only'});
+  const w=dom.window;
+  w.eval(source.slice(source.indexOf('function el('),source.indexOf('async function api(')));
+  w.eval(source.slice(source.indexOf('function svgEl('),source.indexOf(String.fromCharCode(10),source.indexOf('function svgEl('))));
+  w.eval(source.slice(source.indexOf('function table('),source.indexOf('let experimentRequest=')));
+  w.eval(source.slice(source.indexOf('function trainingChart('),source.indexOf('setInterval(')));
+  const rows=[1,2,3].map(epoch=>({epoch,val_ner_f1:.3456789123+epoch/10,val_relation_macro_f1:1,ner_loss:.1,relation_loss:.02}));
+  const box=w.document.querySelector('#chart');
+  box.replaceChildren(w.trainingChart(rows,2));
+  assert.equal(box.querySelectorAll('tbody tr').length,3);
+  assert.equal(box.querySelectorAll('circle').length,6);
+  assert.match(box.textContent,/训练轮次（Epoch）/);
+  assert.ok(box.textContent.includes(String(rows[0].val_ner_f1)));
+  assert.match(box.textContent,/第 2 轮/);
+  box.replaceChildren(w.trainingChart([{...rows[0],val_ner_f1:.99}],1));
+  assert.equal(box.querySelectorAll('tbody tr').length,1);
+  assert.match(box.textContent,/0.990000/);
+  assert.ok(!box.textContent.includes(String(rows[0].val_ner_f1)));
+  dom.window.close();
+});
+
+test('experiment refresh replaces a previous batch with API data',async()=>{
+  const dom=new JSDOM('<div id="experiment-content"></div>',{runScripts:'outside-only'}),w=dom.window;
+  w.eval("var $=s=>document.querySelector(s);"+source.slice(source.indexOf('function el('),source.indexOf('function error(')));
+  w.eval(source.slice(source.indexOf('function svgEl('),source.indexOf(String.fromCharCode(10),source.indexOf('function svgEl('))));
+  w.eval(source.slice(source.indexOf('function table('),source.indexOf('setInterval(')));
+  let epochCount=3,runNumber=1;
+  w.fetch=async()=>({ok:true,json:async()=>({available:false,model_name:'models_manual',metrics:null,training_run:{run_id:'test-run-'+runNumber,run_number:runNumber,started_at:'2026-09-22T08:00:00Z',status:'running',completed_epochs:epochCount,epochs:12},history:Array.from({length:epochCount},(_,i)=>({epoch:i+1,val_ner_f1:runNumber/10,val_relation_macro_f1:1,ner_loss:.2,relation_loss:.1}))})});
+  await w.experiments();
+  assert.equal(w.document.querySelectorAll('tbody tr').length,3);
+  epochCount=1;runNumber=2;
+  await w.experiments(true);
+  assert.equal(w.document.querySelectorAll('tbody tr').length,1);
+  assert.match(w.document.body.textContent,/test-run-2/);
+  assert.match(w.document.body.textContent,/0.200000/);
+  assert.doesNotMatch(w.document.body.textContent,/test-run-1/);
+  dom.window.close();
+});

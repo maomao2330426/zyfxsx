@@ -34,9 +34,10 @@ def main():
     from .inference import Extractor
     from .train import evaluate,prf
     parser=argparse.ArgumentParser()
-    parser.add_argument('--model-dir',type=Path,default=ROOT/'models')
-    parser.add_argument('--output',type=Path,default=ROOT/'reports'/'web_metrics.json')
+    parser.add_argument('--model-dir',type=Path,default=DEFAULT_MODEL_DIR)
+    parser.add_argument('--output',type=Path,default=None)
     args=parser.parse_args()
+    if args.output is None:args.output=args.model_dir/'web_metrics.json'
     records=make_records()
     model=Extractor(args.model_dir);result=evaluate(model.ner,model.re,records,model.vocab)
     # NER 按唯一网页句子计数，关系评估按有向实体对计数。

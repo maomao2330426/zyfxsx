@@ -7,6 +7,7 @@ from collections import Counter
 import numpy as np
 import tensorflow as tf
 from .common import *
+from .training_records import begin_run, record_epoch, finish_run
 from .models import BiLSTMCRF, BiGRUAttention, encode
 
 
@@ -49,7 +50,7 @@ def main():
     p.add_argument('--batch-size',type=int,default=48)
     p.add_argument('--seed',type=int,default=42)
     p.add_argument('--data-dir',type=Path,default=DATA/'processed')
-    p.add_argument('--output',type=Path,default=ROOT/'models')
+    p.add_argument('--output',type=Path,default=DEFAULT_MODEL_DIR)
     p.add_argument('--balance-relations',action='store_true')
     args=p.parse_args()
     if args.epochs<1 or args.batch_size<1:
@@ -92,6 +93,7 @@ def main():
         return nloss,rloss
 
     args.output.mkdir(parents=True,exist_ok=True)
+    run=begin_run(args.output,args.epochs,args.seed)
     write_json(args.output/'vocab.json',vocab)
     history=[];best=-1.; started=time.perf_counter();rng=random.Random(args.seed)
     for epoch in range(1,args.epochs+1):
@@ -113,7 +115,7 @@ def main():
             best=score;best_epoch=epoch
             ner.save_weights(args.output/'ner.weights.h5')
             re_model.save_weights(args.output/'relation.weights.h5')
-        write_json(args.output/'history.json',history)
+        record_epoch(args.output,run,history)
     ner.load_weights(args.output/'ner.weights.h5'); re_model.load_weights(args.output/'relation.weights.h5')
     result=evaluate(ner,re_model,test,vocab)
     result.update({'best_epoch':best_epoch,'epochs':args.epochs,'seed':args.seed,'seconds':time.perf_counter()-started,
@@ -126,7 +128,7 @@ def main():
         'split_sha256':{split:hashlib.sha256((args.data_dir/f'{split}.jsonl').read_bytes()).hexdigest() for split in ('train','val','test')},
         'relation_class_weights':dict(zip(RELATIONS,class_weights.tolist()))}
     result['model_signature']=model_signature(args.output)
-    write_json(args.output/'metrics.json',result)
+    finish_run(args.output,run,result)
     print(json.dumps(result,ensure_ascii=False,indent=2),flush=True)
 
 

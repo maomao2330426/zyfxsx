@@ -1,0 +1,55 @@
+{
+  "seed": 42,
+  "source": "data\\processed_combined",
+  "scope": "weak templates plus explicit synthetic syntax; not a natural-text benchmark",
+  "split_policy": "preserve original canonical item groups; context items drawn only from same split",
+  "source_hashes": {
+    "train": "7c2b871b7e24a1f4366f42e919b00888dc43bcf362e0b857a2fdb609bbf53742",
+    "val": "4ca2e007db80c307b38262bbd8d2ce8bbf7af3c268cf8210a89018b335e79bd9",
+    "test": "5aa647c858b1ba4ff9cff47b2a4de5b0b5b450d6f2c23b0fe47ef93641de8a19"
+  },
+  "added": {
+    "train": 21640,
+    "val": 4646,
+    "test": 4715
+  },
+  "splits": {
+    "train": {
+      "sentences": 42648,
+      "groups": 2626,
+      "relations": {
+        "NO_RELATION": 14417,
+        "DISPOSE_WITH": 10504,
+        "BELONGS_TO": 17727
+      }
+    },
+    "val": {
+      "sentences": 9142,
+      "groups": 562,
+      "relations": {
+        "NO_RELATION": 3099,
+        "BELONGS_TO": 3795,
+        "DISPOSE_WITH": 2248
+      }
+    },
+    "test": {
+      "sentences": 9251,
+      "groups": 567,
+      "relations": {
+        "NO_RELATION": 3155,
+        "BELONGS_TO": 3828,
+        "DISPOSE_WITH": 2268
+      }
+    }
+  },
+  "sentence_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "item_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}

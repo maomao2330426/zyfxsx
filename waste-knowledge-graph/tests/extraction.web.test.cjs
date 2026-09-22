@@ -28,8 +28,24 @@ test('recommended extraction uses the actual API and labels rule backfills hones
       assert.equal(cards.length,1,d.querySelector('#extract-result').textContent);
       assert.match(cards[0].textContent,/香蕉皮 → 属于 → (?:湿垃圾|厨余垃圾)/);
       assert.match(cards[0].textContent,/句式规则/);
-      assert.doesNotMatch(cards[0].textContent,/%/);
+      // Retraining can turn a former rule backfill into genuine model agreement.
+      if(cards[0].textContent.includes('待人工审核 · 句式规则'))assert.doesNotMatch(cards[0].textContent,/%/);
+      else assert.match(cards[0].textContent,/模型与句式规则一致.*模型关系分数/);
       assert.match(d.querySelector('#extract-result').textContent,/增强抽取/);
+    }
+    for(const mode of ['hybrid','baseline']){
+      d.querySelector('input[value="'+mode+'"]').checked=true;
+      d.querySelector('#sentence').value='香蕉皮属于湿垃圾,应该扔进垃圾桶里';
+      d.querySelector('#extract-button').click();
+      await waitFor(()=>!d.querySelector('#extract-button').disabled);
+      const result=d.querySelector('#extract-result');
+      assert.equal(result.querySelectorAll('.triple').length,2,result.textContent);
+      assert.match(result.textContent,/香蕉皮 → 属于 → 湿垃圾/);
+      assert.match(result.textContent,/香蕉皮 → 投放要求 → 扔进垃圾桶里/);
+      assert.match(result.textContent,/扔进垃圾桶里 \/ METHOD/);
+      assert.doesNotMatch(result.textContent,/垃圾桶 \/ ITEM/);
+      const method=[...result.querySelectorAll('.triple')].find(c=>c.textContent.includes('投放要求'));
+      if(method.textContent.includes('待人工审核 · 句式规则'))assert.doesNotMatch(method.textContent,/%/);
     }
     d.querySelector('input[value="baseline"]').checked=true;
     d.querySelector('#sentence').value='香蕉皮不是干垃圾，而是湿垃圾。';
